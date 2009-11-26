@@ -1,0 +1,123 @@
+<!--
+Dorrie - Web interface for building Fedora Spins/Remixes. 
+Copyright (C) 2009 Red Hat Inc.
+Author: Shreyank Gupta <sgupta@redhat.com>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Image : {{ spin.name }}</h1>
+<form method="POST" action="/build/">
+<input type="hidden" name="spin_id" value="{{ spin.id }}"
+
+<script type="text/javascript">
+$(function() {
+    $("#accordion").accordion({ autoHeight: false });
+    $("#flash").hide();
+    });
+
+var spin_id = {{ spin.id|safe }};
+
+function packages(group) {
+    if ($('#grp_' + group).attr('checked')) {
+        select(spin_id, 'g', '+', group);
+        var groups = {{ groups|safe }};
+        var packages = groups[group];
+        chkbox_html = for_loop(packages[0], 'man') + 
+            for_loop(packages[1], 'def') + for_loop(packages[2], 'opt');
+        chkbox_html = "<h3>Packages for " + group + 
+            "</h3><div id='package-list'>" + chkbox_html + "</div>";
+        $("#packages").hide();
+        $("#packages").html(chkbox_html);
+        $('#packages').slideDown("normal");
+    } else {
+        $('#packages').slideUp("normal");
+        select(spin_id, 'g', '-', group);
+    }
+}
+
+function indi(value) {
+    if ($('#pack_' + value).attr('checked')) {
+        select(spin_id, 'p', '+', value);
+    } else {
+        select(spin_id, 'p', '-', value);
+    }
+}
+
+function for_loop(list, type) {
+    var html = "";
+    for(i=0; i<list.length; i++) {
+        html += chkbox(list[i], type);
+    }
+    return html 
+}
+
+var plus = {{ plus|safe }};
+var minus = {{ minus|safe }};
+
+function select(id, type, action, name) {
+    $.post("/select/", { spin_id: id, type: type, action: action, string:name }/*,
+        function(data) {
+            $("#flash").html(data);
+            $('#flash').slideDown("fast");
+            $('#flash').fadeOut("slow");
+        }*/
+    );
+}
+
+function chkbox(value, type) {
+    html = "<input type='checkbox' id='pack_"+ value + "' value='"+ value + "'";
+    if (type == 'man') {
+        html += "checked disabled";
+    } else if (type == 'def' && minus.indexOf(value) == -1) {
+        html += "checked";
+    } else if (type == 'opt' && plus.indexOf(value) != -1) {
+        html += "checked";
+    }
+    onclk = " onClick=indi('" + value + "') /> " + value +"<br />";
+    html += onclk;
+    return html;
+}
+
+</script>
+    <div id="flash">
+    </div>
+    <div id="group-list">
+    <h3>Select Package Groups</h3>
+    <div id="accordion">
+    {% for cat in cats %}
+        <h4><a href="#">{{ cat.name }}</a></h4>
+        <div>
+        {% for group in cat.groups %}
+            <input type="checkbox" id="grp_{{ group }}" value="{{ group }}"
+            {% for each in defaults %}
+                {% ifequal each group %}
+                    checked
+                {% endifequal %}
+            {% endfor %}
+            onClick='packages("{{ group }}")' />
+            {{ group }} <br />   
+        {% endfor %}
+        </div>
+    {% endfor %}
+    </div>
+    <p><input type="submit" value="Next" /></p>
+    </div>
+    <div id="packages">
+    </div>
+</form>
+{% endblock %}

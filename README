@@ -1,0 +1,10 @@
+Hi,
+
+This program is a web application which enables users to build a Fedora
+Spin/Remix. It is a Free Software liscenced under the GNU Affero General 
+Public License and written using Django/Python.
+
+The project is hosted at https://fedorahosted.org/dorrie/ and its wiki is
+located at https://fedoraproject.org/wiki/Remixes_Web_Interface
+
+For installation related information see INSTALL

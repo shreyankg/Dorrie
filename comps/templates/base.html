@@ -1,0 +1,77 @@
+<!--
+Dorrie - Web interface for building Fedora Spins/Remixes. 
+Copyright (C) 2009 Red Hat Inc.
+Author: Shreyank Gupta <sgupta@redhat.com>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Dorrie - Make Thy Own Spin</title>
+<link rel="stylesheet" type="text/css" media="all"
+href="/static/fedora.css" />
+ <link type="text/css"
+ href="/static/jquery/css/smoothness/jquery-ui-1.7.2.custom.css"
+ rel="Stylesheet" />    
+ <script type="text/javascript" src="/static/jquery/js/jquery-1.3.2.min.js"></script>
+ <script type="text/javascript"
+ src="/static/jquery/js/jquery-ui-1.7.2.custom.min.js"></script>
+
+    <!--[if lt IE 7]>
+    <style type="text/css">
+      #wrapper
+      {
+      height: 100%;
+      }
+    </style>
+    <![endif]-->
+  </head>
+  <body class="home">
+    <div id="wrapper">
+
+      <div id="head">
+        <h1><a href="/">Fedora</a></h1>
+      </div>
+      <div id="sidebar">
+        <div id="banner">
+            <a href="/"><img src="/static/dorrie.jpg/" /></a>
+        </div>
+        <div id="nav">
+        </div>
+      </div>
+      <div id="content">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+    <div id="bottom">
+
+      <div id="footer">
+        <p class="copy">
+        Copyright &copy; 2009 Red Hat, Inc. and others.  All Rights Reserved.
+        Please send any comments or corrections to the <a href="mailto:webmaster@fedoraproject.org">websites team</a>.
+        </p>
+        <p class="disclaimer">
+        The Fedora Project is maintained and driven by the community
+        and sponsored by Red Hat.  This is a community maintained
+        site.  Red Hat is not responsible for content.</p>
+        <ul>
+          <li class="first"><a href="http://fedoraproject.org/wiki/Legal:Main">Legal</a></li>
+          <li><a href="http://fedoraproject.org/wiki/Legal:Trademark_guidelines">Trademark Guidelines</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
