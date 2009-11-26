@@ -50,7 +50,7 @@ SITE_ID = 1
 # to load the internationalization machinery.
 USE_I18N = True
 
-APP_ROOT = '/home/sgupta/projects/dorrie/'
+APP_ROOT = ''
 
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
@@ -96,7 +96,8 @@ INSTALLED_APPS = (
     'comps',
 )
 
-COMPS_URL = 'file://%scomps-f11.xml' % APP_ROOT
+COMPS_URL = \
+    'http://cvs.fedoraproject.org/viewvc/comps/comps-f12.xml.in?view=co'
 
 KS_DIR = '/usr/share/spin-kickstarts/'
 
