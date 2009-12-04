@@ -1,0 +1,33 @@
+LoadModule negotiation_module modules/mod_negotiation.so
+AddLanguage en .en
+AddLanguage cs .cs
+AddLanguage da .da
+AddLanguage el .el
+AddLanguage es .es
+AddLanguage pl .pl
+AddLanguage ru .ru
+AddLanguage zh-cn .zh_CN
+
+LanguagePriority en
+ForceLanguagePriority Prefer Fallback
+
+AddDefaultCharset utf-8
+
+RewriteEngine on
+
+RewriteCond %{QUERY_STRING} ^lang=(en|cs|da|el|es|pl|ru|zh_CN)$
+RewriteRule ^(?:/(?:en|cs|da|el|es|pl|ru|zh_CN))?(/.*)$ /%1$1? [R=301]
+AliasMatch ^(?:/(?:en|cs|da|el|es|pl|ru|zh_CN))(/.*)?$ @DOCUMENTROOT@$1
+
+<Directory @DOCUMENTROOT@>
+  Options MultiViews
+
+  SetEnvIf Request_URI ^/en/ prefer-language=en
+  SetEnvIf Request_URI ^/cs/ prefer-language=cs
+  SetEnvIf Request_URI ^/da/ prefer-language=da
+  SetEnvIf Request_URI ^/el/ prefer-language=el
+  SetEnvIf Request_URI ^/es/ prefer-language=es
+  SetEnvIf Request_URI ^/pl/ prefer-language=pl
+  SetEnvIf Request_URI ^/ru/ prefer-language=ru
+  SetEnvIf Request_URI ^/zh_CN/ prefer-language=zh-cn
+</Directory>

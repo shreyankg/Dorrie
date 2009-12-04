@@ -1,0 +1,668 @@
+/* general */
+dt, dd {
+	font-family: sans-serif;
+}
+
+a:link, a:visited, a:active,
+#content a:link, #content a:visited, #content a:active
+{
+	color: #3771c8;
+}
+/* end: general */
+
+/* clear all background */
+#head, #sidebar, #content, #wrapper
+{
+	background-color: transparent;
+	background-image: none;
+}
+
+/* end: clear all background */
+
+/* header */
+
+#wrapper
+{
+	padding: 0;
+	width: 960px;
+}
+
+#head
+{
+	background-color: #337ACC;
+	border: 0;
+	height: 50px;
+        margin-top: 20px;
+	-moz-border-radius-topleft: 15px;
+	-moz-border-radius-topright: 15px;
+}
+
+#head h1 a
+{
+	background: transparent url(../images/fedora-spins-logo.png) no-repeat scroll 10px 30%;
+}
+
+#head h1
+{
+}
+
+#primary-nav
+{
+	position: absolute;
+	top: 30px;
+	right: 25px;
+}
+
+#primary-nav ul
+{
+	list-style-type: none;
+	margin:0;
+}
+
+#primary-nav li
+{
+	display: inline;
+	padding-left: 10px;
+	float: right;
+}
+
+#spins-about a, #spins-directory a, #spins-support a {
+	display:block;
+	height: 20px;
+	/* width: 95px; */
+	padding-left: 22px;
+	color: #fff;
+	text-decoration: none;
+}
+
+#head-about a {
+	background:transparent url(/static/images/spins-about-icon.png) no-repeat scroll left center;
+}
+
+#head-login a {
+	background:transparent url(/static/images/spins-directory-icon.png) no-repeat scroll left center;
+}
+
+#head-support a {
+	background:transparent url(/static/images/spins-support-icon.png) no-repeat scroll left center;
+}
+
+
+/* end: header */
+
+/* tagline */
+#spins-tagline
+{
+	margin-left: 0px;
+}
+/* end: tagline */
+
+
+/* sidebar */
+#sidebar
+{
+	float: right;
+	font-size: .95em;
+	padding-bottom: 2px;
+	width: 250px;
+}
+#sidebar h2, #sidebar img
+{
+	text-transform: uppercase;
+	font-size: 1em;
+	margin-top: 20px;
+}
+
+#sidebar h3
+{
+	background-color: #fff;
+}
+
+#sidebar h3 a
+{
+	text-decoration: none;
+	font-size: 0.8em
+}
+
+#sidebar h2, #sidebar p
+{
+	padding: 0px;
+}
+
+#download-fedora h2, #download-fedora p {
+	padding: 8px;
+}
+
+#download-fedora
+{
+	background-color: #80b4e3;
+	color: #fff;
+}
+
+#download-now p
+{
+	font-style: italic;
+	color: #9e9e93;
+        padding: 3px;
+}
+
+#download-now img {
+  margin: 5px;
+  margin-bottom: -5px;
+}
+
+#download-now a.big-button {
+  display: block;
+  padding: 10px;
+  background-color: #337ACC;
+  color: white;
+  font-weight: bold;
+  font-size: 16pt;
+  -moz-border-radius: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#download-now a.big-button:hover {
+  background-color: #295596;
+}
+
+#top-spins table
+{
+	border-collapse: collapse;
+	color: #666;
+}
+
+#top-spins table tr
+{
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+#top-spins table td
+{
+	padding: 3px;
+}
+
+#top-spins a
+{
+	text-decoration: none;
+}
+
+/* end: sidebar */
+
+/* content */
+#content
+{
+	margin-left: 5px;
+	padding-left: 0px;
+	width: 680px;
+}
+
+#content img
+{
+	margin: 0px;
+}
+
+h4
+{
+	font-size:1.2em;
+	color: #808080;
+}
+
+div.panes div > h4 {
+	margin-top: 1.5em;
+}
+
+div.panes img.splash-right {
+	float: right;
+}
+
+div.panes span.download-option {
+	display: block;
+	width: 300px !important;
+	margin-bottom: 2em;
+}
+
+div.panes span#opt1 { float: left; }
+div.panes span#opt2 { float: right; }
+
+/* end: content */
+
+/* spins tables */
+
+#popular-spins table td,
+#alpha-spins table td
+{
+  padding: .8em;
+  border: 0px solid white !important;
+  border-bottom: 18px solid white !important;
+  vertical-align: top;
+}
+
+#popular-spins td.rank,
+#alpha-spins td.rank
+{
+  background-color: white;
+  text-align: left;
+  padding-left: 0px;
+  padding-right: 7px;
+  font-weight: bold;
+}
+
+#popular-spins td.name,
+#alpha-spins td.name
+{
+  font-size: xx-small;
+  font-style: italic;
+}
+
+#popular-spins td.name a,
+#alpha-spins td.name a
+{
+  font-weight: bold;
+  font-size: medium;
+  font-style: normal;
+}
+
+/* end: spins tables */
+
+
+/* footer */
+body
+{
+	background: #fff url(../images/background.png) repeat-x scroll 0 0;
+}
+
+#wrapper
+{
+	min-height: 0px;
+	margin: auto;
+	background: #fff url(../images/background.png) repeat-x scroll 0 0;
+
+}
+
+#bottom
+{
+	background-color: #e6e6e6;
+	padding: 20px 0px 0px 0px;
+	margin: 0;
+}
+
+#footer
+{
+	background-color: #e6e6e6;
+	background-image: none;
+	clear: both;
+	/*border: 0; */
+	color: #4d4d4d;
+	width: 960px;
+	text-align: left;
+	margin: 0 auto;
+	border-bottom: 15px solid #e6e6e6;
+	padding-bottom: 15px;
+
+}
+
+#footer a
+{
+	color: #3771c8;
+}
+
+#footer .rh-logo
+{
+	float: left;
+	margin-right: 15px;
+}
+
+#footer p
+{
+	margin: 0px;
+}
+
+#footer .sponsor {
+	padding-top: 2px;
+}
+
+#footer .disclaimer
+{
+	font-style: italic;
+}
+
+#sitelinks
+{
+	margin: 0 auto;
+	width: 960px; /* this centers the list */
+	line-height: 1.6;
+	color: #808080;
+}
+
+#sitelinks a
+{
+	color: #808080;
+	text-decoration: none;
+}
+
+#sitelinks dl
+{
+	float: left;
+	margin: 0px 15px 20px 0px;
+	/* width: 140px; */
+}
+
+#sitelinks dt
+{
+	font-weight: bold;
+}
+
+/* end: footer */
+
+/* tabs */
+/* root element for tabs  */
+ul.tabs
+{
+	margin:0 !important;
+	padding:0;
+	height:30px;
+	border-bottom:1px solid #dcdcdc;
+}
+
+/* single tab */
+ul.tabs li
+{
+	float:left;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+
+/* link inside the tab. no background image */
+ul.tabs a
+{
+	float:left;
+	font-size:13px;
+	display:block;
+	padding:5px 10px;
+	text-decoration:none;
+	border:1px solid #dcdcdc;
+	border-bottom:0px;
+	height:18px;
+	background-color:#dcdcdc;
+	color:#3771c8;
+	margin-right:4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright:4px;
+	position:relative;
+	top:1px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+ul.tabs a:hover
+{
+	background-color:#fff;
+	color:#818181;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* selected tab */
+ul.tabs a.current
+{
+	background-color:#fff;
+	border-bottom:2px solid #fff;
+	color:#808080;
+	cursor:default;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* tab pane */
+div.panes > div
+{
+	display:none;
+	border: 0px;
+	border:1px solid #dcdcdc;
+	border-width:0 0px 0px 1px;
+	min-height:150px;
+	padding:15px 20px;
+	background-color:#fff;
+}
+
+#content a.current:link
+{
+	color: #828282;
+}
+/* end: tabs */
+
+#content table, #content table td
+{
+	border-style: hidden;
+}
+
+div.panes > div h2 {
+	margin-top:		.5em;
+	margin-bottom:		.6em;
+}
+
+.panes table tr
+{
+	border: 0px;
+	border-style: none;
+	background-color: #f2f2f2;
+}
+
+.panes table tr span a
+{
+	text-decoration: none;
+}
+
+.panes table tr:hover
+{
+	background-color: #ffffaa;
+}
+
+/* Misc stuff */
+
+#interview
+{
+	background-color: #ececec;
+	padding: 2em;
+}
+
+#interview a
+{
+	text-decoration: none;
+}
+
+#interview img
+{
+        margin-left: 1em;
+}
+
+div.creator-interview
+{
+	margin-bottom: 2em;
+}
+
+.creator-interview a
+{
+	text-decoration: none;
+}
+
+.creator-interview img
+{
+	margin-left: 2em !important;
+}
+
+.meet-image
+{
+	border: 0px;
+	float: right;
+}
+
+.within-text
+{
+	float: left;
+	padding: 5px;
+}
+
+#content .download-media
+{
+	float: left;
+	padding: 1.2em;
+}
+
+.download-button
+{
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	background-color:#5F94C9 !important;
+	border:1px solid #446382;
+	color:#FFFFFF !important;
+	font-weight:bold;
+	line-height:3;
+	margin:0.9em 0 0;
+	padding:0.4em 0.5em;
+	text-decoration:none;
+}
+
+#content span.download-opt1
+{
+	float: left;
+	width: 45%;
+}
+
+.which-arch
+{
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	background-color: #f1f1f1;
+	padding: .5em 1em;
+	display: block;
+	clear: left;
+	margin-bottom: 1em;
+}
+
+.which-arch h4 {
+  margin-top: 0px;
+}
+
+.which-arch ul {
+  margin-bottom: .5em;
+}
+
+span.blurb
+{
+	font-size: 0.9em;
+	float: left;
+	border:1px solid #9E9E93;
+	padding: 2px;
+	margin-right:		2em;
+	margin-bottom:		2em;
+}
+
+/* this is not really necessary, left it anyway */
+span.learn-more
+{
+	display: none;
+}
+
+.qa-list li
+{
+	font-weight: bold;
+}
+
+#content ul.checkmark-list
+{
+	list-style: disc url(/static/images/checkmark.png) outside;
+}
+
+code
+{
+	font-size: 1.2em;
+	background-color: #EDEDED;
+	padding: .2em;
+	font-weight: bold;
+}
+
+/* hacky wacky */
+.clear-both
+{
+	clear: both;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+.footnote
+{
+	font-style: italic;
+}
+
+/* used for picture overlay */
+.resize
+{
+	width: 200px;
+	height: 200px;
+}
+
+/* the overlayed element */
+.simple_overlay
+{
+
+    /* must be initially hidden */
+    display:none;
+
+    /* place overlay on top of other elements */
+    z-index:10000;
+
+    /* styling */
+    background-color:#333;
+
+    width:675px;
+    min-height:200px;
+    border:1px solid #666;
+
+    /* CSS3 styling for latest browsers */
+    -moz-box-shadow:0 0 90px 5px #000;
+    -webkit-box-shadow: 0 0 90px #000;
+}
+
+/* close button positioned on upper right corner */
+.simple_overlay .close
+{
+    background-image:url(../images/overlay-close.png);
+    position:absolute;
+    right:-15px;
+    top:-15px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+}
+
+/* styling for elements inside overlay */
+.details
+{
+    position:absolute;
+    top:15px;
+    right:15px;
+    font-size:11px;
+    color:#fff;
+    width:150px;
+}
+
+.details h3
+{
+    color:#aba;
+    font-size:15px;
+    margin:0 0 -10px 0;
+}
+
+/* end: used for picture overlay */

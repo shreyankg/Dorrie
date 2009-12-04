@@ -1,0 +1,54 @@
+<?python
+  area = "main"
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('About Fedora Spins')}</title>
+  </head>
+  <body>
+    <h2>${_('About Spins')}</h2>
+    <h4>${_('Different people, different tastes... different Fedoras.')}</h4>
+    <p>${_('What is a spin? Fedora spins are alternate versions of  Fedora, tailored for various types of users via hand-picked application sets and other customizations.')}</p>
+	<p><img src="/static/images/djs.png" class="within-text" title="${_('DJs spinning records')}" />${_('For example, the &lt;a href="/games/"&gt;Fedora Games spin&lt;/a&gt; is aimed at providing gamers with the ultimate set of free &amp; open source games, out of the box. The &lt;a href="/fel/"&gt;Fedora Electronic Lab&lt;/a&gt; consists of a hand-picked set of free &amp; open source tools and applications for high-end hardware design and simulation.')}</p>
+	<p>${_('Spins first became available with the release of Fedora 7 in May 2007. The spin creation process as well as maintenance of spins is managed by the &lt;a href="http://fedoraproject.org/wiki/SIGs/Spins"&gt;Fedora Spins SIG&lt;/a&gt;.')}</p>
+	<p>${_('Which Fedora is for you? Find out by &lt;a href="/"&gt;browsing our directory of spins&lt;/a&gt; and trying one out!')}</p>
+	<h4>${_('How do you use a spin?')}</h4>
+	<p>${_("Using the ISO file provided for the spin you're interested in, you can create a CD or DVD that will boot into the spin when you insert it into a computer and turn it on or reboot. Alternatively, using that same ISO file, you can also create a bootable USB stick which will also boot into the spin when you insert it into a computer and turn it on or reboot.")}</p>
+	<p>${_('One thing to remember when you run a spin off of a CD or DVD is that as you use the system, any additional applications you install will not be there when you reboot your computer - there isn\'t any way to work around this because you cannot write out to bootable CD or DVD media. Additionally, any files you save will be lost when you reboot because Fedora runs off of the media, it doesn\'t access your hard drive.. When using CD or DVD bootable spins, you should always make sure you save your files to an external device such as a USB key or USB hard drive. (&lt;a href="http://fedoraproject.org/wiki/How_to_create_and_use_a_Live_CD"&gt;Learn more about creating and using bootable CD or DVD media for spins here&lt;/a&gt;.)')}</p>
+	<p>${_('When you use a USB stick to boot your spin, you have an extra option to save some of the disk space on the USB stick as permanent storage. If you choose to create the media for your spin this way, then any applications you\'ve install on your running spin, and any files you save to disk will still be present when you reboot your computer, as long as you don\'t go over the amount of available free space on your USB stick. (&lt;a href="http://fedoraproject.org/wiki/FedoraLiveCD/USBHowTo"&gt;Learn more about creating and using bootable USB sticks for spins here&lt;/a&gt;.)')}</p>
+	<p>${_("Whether you've decided to use CD, DVD, or USB media to run your spin, you can choose to run the spin off of the media without affecting your computer's hard drive, or you can use it to install Fedora directly to your hard drive.")}</p>
+	<h4>${_('Why use a spin?')}</h4>
+	<p>${_('There are a few common reasons Fedora users use spins:')}</p>
+	<ul class="qa-list">
+		<li>${_('Use a pre-installed selection of software to aid in a particular task right away.')}</li>
+		<p>${_('Some Fedora spins are customized to be used for a specialized task. The &lt;a href="/games/"&gt;Fedora Games Spin&lt;/a&gt; and the &lt;a href="/fel/"&gt;Fedora Electronic Lab&lt;/a&gt; are good examples of this kind of spin. There are a lot of packages in Fedora, and it can be time-consuming to look up and install all the software you might need for a particular task. The creators of these kind of spins have done all this legwork for you already, so if you run one of these spins, the software you need will already be installed.')}</p>
+		<li>${_('Use a pre-installed desktop environment')}</li>
+		<p>${_('The default desktop environment of Fedora is GNOME, but if you prefer an alternative desktop environment such as &lt;a href="/kde/"&gt;KDE&lt;/a&gt; or &lt;a href="/xfce/"&gt;XFCE&lt;/a&gt;, you can download a spin for your preferred desktop environment and use that to install Fedora, pre-configured for the desktop environment of your choice.')}</p>
+		<li>${_('Repair &amp; Recovery')}</li>
+		<p>${_('Because spins do not require hard drive access to run, you can use them if you experience hard drive failure or a operating system failure and want to try to try recover files off of your disk. You can also use the spin media to use your computer while you wait for your replacement hard drive to arrive in the mail!')}</p>
+		<li>${_('Try something new or demo something, no-risk')}</li>
+		<p>${_("Many people download and run spins off of live media so they can try out new software without having to completely reinstall their system. For example, if you'd like to try out a new desktop environment, you can run the appropriate spin's live media and see if you like it without risk to your current computer's setup. You can also use spins on a friend's computer to show them how cool Fedora is without them needing to do a full install or lose their files! (And later, when you've convinced them to do a full install, they can use the spin media to install straight to their hard drive. :) )")}</p>
+	</ul>
+	<h4>${_('How do I create my own spin?')}</h4>
+	<p>${_('More information on creating spins is available on the &lt;a href="https://fedoraproject.org/wiki/Spins_Process#Creating_a_Spin"&gt;Fedora wiki&lt;/a&gt;.')}</p>
+	<h4>${_('More Resources on Spins')}</h4>
+	<p>${_('Using Spins and General Information')}</p>
+	<ul>
+		<li><a href="http://lwn.net/Articles/249251/">${_('Fedora reaching out to new niches')}</a>${(' by Jake Edge on LWN.net')}</li>
+		<li><a href="http://magazine.redhat.com/2008/04/08/interview-jeremy-katz-on-fedora-live-cds/">${_('Interview: Jeremy Katz on Fedora Live CDs')}</a>${(' by Jonathan Roberts on Red Hat Magazine')}</li>
+		<li><a href="http://magazine.redhat.com/2007/09/28/customized-spins-of-fedora/">${_('Customized spins of Fedora')}</a>${(' by Max Spevack on Red Hat Magazine')}</li>
+	</ul>
+	<p>${_('Creating Spins')}</p>
+	<ul>
+		<li><a href="http://fedoraproject.org/wiki/How_to_create_and_use_a_Live_CD">${_('How to Create a Live CD')}</a>${('  - steps to create and use a Live CD')}</li>
+		<li><a href="http://magazine.redhat.com/2007/05/31/remixing-fedora-7/">${_('Remixing Fedora 7')}</a> ${(' - by Max Spevack on Red Hat Magazine; walks through the tools available to create spins.')}</li>
+		<li><a href="http://fedoraproject.org/wiki/SIGs/Spins">${_('Fedora Spins SIG')}</a> ${(' - the Spins SIG is a good resource for learning more about the spin creation process.')}</li>
+		<li><a href="http://fedoraproject.org/wiki/Infrastructure/CustomSpins">${_('Infrastructure/Custom Spins')}</a> ${('  - steps to get your spin listed with other spins.')}</li>
+	</ul>
+
+  </body>
+</html>

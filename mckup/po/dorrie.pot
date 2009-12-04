@@ -1,0 +1,620 @@
+# Translations template for PROJECT.
+# Copyright (C) 2009 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2009-12-04 22:46+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.4\n"
+
+#: data/content/about.html:10
+msgid "About Fedora Spins"
+msgstr ""
+
+#: data/content/about.html:13 data/templates/head.html:10
+msgid "About Spins"
+msgstr ""
+
+#: data/content/about.html:14
+msgid "Different people, different tastes... different Fedoras."
+msgstr ""
+
+#: data/content/about.html:15
+msgid ""
+"What is a spin? Fedora spins are alternate versions of  Fedora, tailored "
+"for various types of users via hand-picked application sets and other "
+"customizations."
+msgstr ""
+
+#: data/content/about.html:16
+msgid "DJs spinning records"
+msgstr ""
+
+#: data/content/about.html:16
+msgid ""
+"For example, the <a href=\"/games/\">Fedora Games spin</a> is aimed at "
+"providing gamers with the ultimate set of free & open source games, out "
+"of the box. The <a href=\"/fel/\">Fedora Electronic Lab</a> consists of a"
+" hand-picked set of free & open source tools and applications for high-"
+"end hardware design and simulation."
+msgstr ""
+
+#: data/content/about.html:17
+msgid ""
+"Spins first became available with the release of Fedora 7 in May 2007. "
+"The spin creation process as well as maintenance of spins is managed by "
+"the <a href=\"http://fedoraproject.org/wiki/SIGs/Spins\">Fedora Spins "
+"SIG</a>."
+msgstr ""
+
+#: data/content/about.html:18
+msgid ""
+"Which Fedora is for you? Find out by <a href=\"/\">browsing our directory"
+" of spins</a> and trying one out!"
+msgstr ""
+
+#: data/content/about.html:19
+msgid "How do you use a spin?"
+msgstr ""
+
+#: data/content/about.html:20
+msgid ""
+"Using the ISO file provided for the spin you're interested in, you can "
+"create a CD or DVD that will boot into the spin when you insert it into a"
+" computer and turn it on or reboot. Alternatively, using that same ISO "
+"file, you can also create a bootable USB stick which will also boot into "
+"the spin when you insert it into a computer and turn it on or reboot."
+msgstr ""
+
+#: data/content/about.html:21
+msgid ""
+"One thing to remember when you run a spin off of a CD or DVD is that as "
+"you use the system, any additional applications you install will not be "
+"there when you reboot your computer - there isn't any way to work around "
+"this because you cannot write out to bootable CD or DVD media. "
+"Additionally, any files you save will be lost when you reboot because "
+"Fedora runs off of the media, it doesn't access your hard drive.. When "
+"using CD or DVD bootable spins, you should always make sure you save your"
+" files to an external device such as a USB key or USB hard drive. (<a "
+"href=\"http://fedoraproject.org/wiki/How_to_create_and_use_a_Live_CD\">Learn"
+" more about creating and using bootable CD or DVD media for spins "
+"here</a>.)"
+msgstr ""
+
+#: data/content/about.html:22
+msgid ""
+"When you use a USB stick to boot your spin, you have an extra option to "
+"save some of the disk space on the USB stick as permanent storage. If you"
+" choose to create the media for your spin this way, then any applications"
+" you've install on your running spin, and any files you save to disk will"
+" still be present when you reboot your computer, as long as you don't go "
+"over the amount of available free space on your USB stick. (<a "
+"href=\"http://fedoraproject.org/wiki/FedoraLiveCD/USBHowTo\">Learn more "
+"about creating and using bootable USB sticks for spins here</a>.)"
+msgstr ""
+
+#: data/content/about.html:23
+msgid ""
+"Whether you've decided to use CD, DVD, or USB media to run your spin, you"
+" can choose to run the spin off of the media without affecting your "
+"computer's hard drive, or you can use it to install Fedora directly to "
+"your hard drive."
+msgstr ""
+
+#: data/content/about.html:24
+msgid "Why use a spin?"
+msgstr ""
+
+#: data/content/about.html:25
+msgid "There are a few common reasons Fedora users use spins:"
+msgstr ""
+
+#: data/content/about.html:27
+msgid ""
+"Use a pre-installed selection of software to aid in a particular task "
+"right away."
+msgstr ""
+
+#: data/content/about.html:28
+msgid ""
+"Some Fedora spins are customized to be used for a specialized task. The "
+"<a href=\"/games/\">Fedora Games Spin</a> and the <a "
+"href=\"/fel/\">Fedora Electronic Lab</a> are good examples of this kind "
+"of spin. There are a lot of packages in Fedora, and it can be time-"
+"consuming to look up and install all the software you might need for a "
+"particular task. The creators of these kind of spins have done all this "
+"legwork for you already, so if you run one of these spins, the software "
+"you need will already be installed."
+msgstr ""
+
+#: data/content/about.html:29
+msgid "Use a pre-installed desktop environment"
+msgstr ""
+
+#: data/content/about.html:30
+msgid ""
+"The default desktop environment of Fedora is GNOME, but if you prefer an "
+"alternative desktop environment such as <a href=\"/kde/\">KDE</a> or <a "
+"href=\"/xfce/\">XFCE</a>, you can download a spin for your preferred "
+"desktop environment and use that to install Fedora, pre-configured for "
+"the desktop environment of your choice."
+msgstr ""
+
+#: data/content/about.html:31
+msgid "Repair & Recovery"
+msgstr ""
+
+#: data/content/about.html:32
+msgid ""
+"Because spins do not require hard drive access to run, you can use them "
+"if you experience hard drive failure or a operating system failure and "
+"want to try to try recover files off of your disk. You can also use the "
+"spin media to use your computer while you wait for your replacement hard "
+"drive to arrive in the mail!"
+msgstr ""
+
+#: data/content/about.html:33
+msgid "Try something new or demo something, no-risk"
+msgstr ""
+
+#: data/content/about.html:34
+msgid ""
+"Many people download and run spins off of live media so they can try out "
+"new software without having to completely reinstall their system. For "
+"example, if you'd like to try out a new desktop environment, you can run "
+"the appropriate spin's live media and see if you like it without risk to "
+"your current computer's setup. You can also use spins on a friend's "
+"computer to show them how cool Fedora is without them needing to do a "
+"full install or lose their files! (And later, when you've convinced them "
+"to do a full install, they can use the spin media to install straight to "
+"their hard drive. :) )"
+msgstr ""
+
+#: data/content/about.html:36
+msgid "How do I create my own spin?"
+msgstr ""
+
+#: data/content/about.html:37
+msgid ""
+"More information on creating spins is available on the <a "
+"href=\"https://fedoraproject.org/wiki/Spins_Process#Creating_a_Spin\">Fedora"
+" wiki</a>."
+msgstr ""
+
+#: data/content/about.html:38
+msgid "More Resources on Spins"
+msgstr ""
+
+#: data/content/about.html:39
+msgid "Using Spins and General Information"
+msgstr ""
+
+#: data/content/about.html:41
+msgid "Fedora reaching out to new niches"
+msgstr ""
+
+#: data/content/about.html:42
+msgid "Interview: Jeremy Katz on Fedora Live CDs"
+msgstr ""
+
+#: data/content/about.html:43
+msgid "Customized spins of Fedora"
+msgstr ""
+
+#: data/content/about.html:45 data/content/support.html:51
+msgid "Creating Spins"
+msgstr ""
+
+#: data/content/about.html:47 data/content/support.html:53
+msgid "How to Create a Live CD"
+msgstr ""
+
+#: data/content/about.html:48 data/content/support.html:54
+msgid "Remixing Fedora 7"
+msgstr ""
+
+#: data/content/about.html:49 data/content/support.html:55
+msgid "Fedora Spins SIG"
+msgstr ""
+
+#: data/content/about.html:50 data/content/support.html:56
+msgid "Infrastructure/Custom Spins"
+msgstr ""
+
+#: data/content/index.html:7
+msgid "Fedora Spins"
+msgstr ""
+
+#: data/content/index.html:10
+msgid "Meet our spins."
+msgstr ""
+
+#: data/content/index.html:11
+msgid ""
+"What is a spin? Fedora spins are alternate version of Fedora, tailored "
+"for various types of users via hand-picked application set or "
+"customizations."
+msgstr ""
+
+#: data/content/index.html:12
+msgid "Learn more about spins >"
+msgstr ""
+
+#: data/content/support.html:10 data/content/support.html:13
+msgid "Spins Support"
+msgstr ""
+
+#: data/content/support.html:14
+msgid "Downloading spins / using BitTorrent."
+msgstr ""
+
+#: data/content/support.html:15
+msgid "What is BitTorrent?"
+msgstr ""
+
+#: data/content/support.html:16
+msgid ""
+"BitTorrent is a way to download information in cooperation with other "
+"computers. Each computer cooperating in the group downloads pieces of the"
+" information in a particular torrent from other peers in the group. "
+"Computers that have finished downloading all the data in a torrent remain"
+" in the swarm to seed, or provide data to other peers. If you download "
+"using BitTorrent, as a courtesy you should seed the torrent at least "
+"until you have uploaded the same amount of data you downloaded."
+msgstr ""
+
+#: data/content/support.html:17
+msgid ""
+"If your computer does not have software installed for BitTorrent, visit "
+"the BitTorrent home page at <a "
+"href=\"http://www.bittorrent.com/download/\">http://www.bittorrent.com/download/</a>"
+" to download it. BitTorrent client software is available for Windows, Mac"
+" OS, Linux, and many other operating systems."
+msgstr ""
+
+#: data/content/support.html:18
+msgid ""
+"You do not need to find a special mirror for BitTorrent files. The "
+"BitTorrent protocol ensures that your computer participates in a nearby "
+"group."
+msgstr ""
+
+#: data/content/support.html:19
+msgid "What is a 'torrent' file?"
+msgstr ""
+
+#: data/content/support.html:20
+msgid ""
+"A 'torrent' file is a file you load into <a "
+"href=\"http://www.bittorrent.com/btusers/what-is-bittorrent\">BitTorrent "
+"software</a> that tells it which computers to connect to in order to "
+"download the file that you ultimately want to download. In the case of "
+"the Fedora spins, the torrent files tell BitTorrent where it should "
+"connect in order to download the ISO file for a Fedora spin."
+msgstr ""
+
+#: data/content/support.html:21
+msgid "Okay, I downloaded the spin's 'torrent' file... now what?"
+msgstr ""
+
+#: data/content/support.html:23
+msgid ""
+"If you do not have BitTorrent software installed on your computer, visit "
+"<a "
+"href=\"http://www.bittorrent.com/download\">http://www.bittorrent.com/download</a>"
+" and follow the instructions there to download the BitTorrent software of"
+" your choice."
+msgstr ""
+
+#: data/content/support.html:24
+msgid ""
+"Start your BitTorrent software and open the torrent file for the spin you"
+" selected inside of BitTorrent."
+msgstr ""
+
+#: data/content/support.html:25
+msgid ""
+"Depending on the BitTorrent software you are using, the ISO download may "
+"start automatically. If it does not look like the download is working, "
+"you may need to press a 'start download' or 'run torrent' button in your "
+"BitTorrent software to start the download."
+msgstr ""
+
+#: data/content/support.html:26
+msgid ""
+"It may take anywhere from a few minutes to several hours to complete the "
+"ISO download depending on the available of other computers sharing the "
+"file. Your BitTorrent client will notify you when the download has "
+"completed successfully."
+msgstr ""
+
+#: data/content/support.html:27
+msgid "Follow the steps below in order to use the spin ISO file."
+msgstr ""
+
+#: data/content/support.html:29
+msgid "Using spin ISOs"
+msgstr ""
+
+#: data/content/support.html:30
+msgid "I have the spin ISO and I want to make a live CD or DVD. How do I do it?"
+msgstr ""
+
+#: data/content/support.html:31
+msgid ""
+"Please refer to the <a href=\"http://docs.fedoraproject.org/readme-"
+"burning-isos/\">Fedora Burning ISO images to disc guide</a> to learn how "
+"to create bootable disc media of a spin using its ISO."
+msgstr ""
+
+#: data/content/support.html:32
+msgid "I have the spin ISO and I want to make a live USB key. How do I do it?"
+msgstr ""
+
+#: data/content/support.html:33
+msgid ""
+"You can use either a Windows or Linux system to create bootable USB media"
+" using a spin ISO file."
+msgstr ""
+
+#: data/content/support.html:35
+msgid ""
+"To begin, make sure there is sufficient free space available on the USB "
+"media. You will need 1 GB at a minimum. There is no need to repartition "
+"or reformat your media."
+msgstr ""
+
+#: data/content/support.html:36
+msgid ""
+"Download and install the <a href=\"https://fedorahosted.org/liveusb-"
+"creator/\">LiveUSB creator software</a>. The download and instructions "
+"are available at the LiveUSB Creator website."
+msgstr ""
+
+#: data/content/support.html:37
+msgid ""
+"Follow the instructions given at the site and in the liveusb-creator "
+"program to create the bootable USB media."
+msgstr ""
+
+#: data/content/support.html:39
+msgid "Using spin media / booting spins"
+msgstr ""
+
+#: data/content/support.html:40
+msgid "How do I start using the spin once I've created media for it?"
+msgstr ""
+
+#: data/content/support.html:41
+msgid ""
+"Switch on your computer, and either load the Fedora live disc you created"
+" into the CD or DVD drive or insert your live USB key into a USB slot. "
+"Restart the computer with the disc still in the drive or the USB key "
+"still in the slot."
+msgstr ""
+
+#: data/content/support.html:42
+msgid ""
+"Ideally, you should soon see the Fedora boot screen and a ten-second "
+"countdown. If you do not see this screen:"
+msgstr ""
+
+#: data/content/support.html:44
+msgid ""
+"You may not have created your media properly. You cannot simply burn the "
+"ISO file to a disc. Please follow the steps referenced above to ensure "
+"you have valid media."
+msgstr ""
+
+#: data/content/support.html:45
+msgid ""
+"You might need to select an option manually to make your computer boot "
+"from the live disc or live USB key."
+msgstr ""
+
+#: data/content/support.html:47
+msgid ""
+"Power your computer on, and watch the initial BIOS screen for a prompt "
+"that indicates which key to use for either a boot menu, or the BIOS setup"
+" utility. The 'boot menu' option is preferable. If you cannot see such a "
+"prompt, consult your manufacturer's documentation for your computer "
+"system, motherboard, or mainboard for the correct keystroke. On many "
+"systems, the required key will be F12, F2, F1, or Delete."
+msgstr ""
+
+#: data/content/support.html:48
+msgid "Creating spins"
+msgstr ""
+
+#: data/content/support.html:49
+msgid "I want to create my own Fedora spin! How can I do this?"
+msgstr ""
+
+#: data/content/support.html:50
+msgid ""
+"Anyone can create their own Fedora spin using their own custom software "
+"and configuration selections. Here are a few resources you can use to "
+"learn more about creating your own spin:"
+msgstr ""
+
+#: data/templates/foot.html:9
+msgid "Fedora"
+msgstr ""
+
+#: data/templates/foot.html:10
+msgid "About Fedora"
+msgstr ""
+
+#: data/templates/foot.html:11
+msgid "Planet Fedora"
+msgstr ""
+
+#: data/templates/foot.html:12
+msgid "Fedora Weekly News"
+msgstr ""
+
+#: data/templates/foot.html:13 data/templates/foot.html:28
+#: data/templates/foot.html:39
+msgid "Documentation"
+msgstr ""
+
+#: data/templates/foot.html:14
+msgid "Fedora Wiki"
+msgstr ""
+
+#: data/templates/foot.html:15
+msgid "Events"
+msgstr ""
+
+#: data/templates/foot.html:18
+msgid "Download"
+msgstr ""
+
+#: data/templates/foot.html:19
+msgid "Get Fedora"
+msgstr ""
+
+#: data/templates/foot.html:20
+msgid "Full Download List"
+msgstr ""
+
+#: data/templates/foot.html:23
+msgid "Support"
+msgstr ""
+
+#: data/templates/foot.html:24
+msgid "Get Help"
+msgstr ""
+
+#: data/templates/foot.html:25
+msgid "IRC Help"
+msgstr ""
+
+#: data/templates/foot.html:26
+msgid "Mailing List Help"
+msgstr ""
+
+#: data/templates/foot.html:27
+msgid "Forums"
+msgstr ""
+
+#: data/templates/foot.html:31
+msgid "Join"
+msgstr ""
+
+#: data/templates/foot.html:32
+msgid "Join Fedora"
+msgstr ""
+
+#: data/templates/foot.html:33
+msgid "Fedora SIGs"
+msgstr ""
+
+#: data/templates/foot.html:34
+msgid "Fedora Account System"
+msgstr ""
+
+#: data/templates/foot.html:35
+msgid "Fedora Community"
+msgstr ""
+
+#: data/templates/foot.html:38
+msgid "Subprojects"
+msgstr ""
+
+#: data/templates/foot.html:40
+msgid "Translation"
+msgstr ""
+
+#: data/templates/foot.html:41
+msgid "Marketing"
+msgstr ""
+
+#: data/templates/foot.html:42
+msgid "Ambassadors"
+msgstr ""
+
+#: data/templates/foot.html:43
+msgid "Design"
+msgstr ""
+
+#: data/templates/foot.html:44
+msgid "Infrastructure"
+msgstr ""
+
+#: data/templates/foot.html:48
+msgid "Websites"
+msgstr ""
+
+#: data/templates/foot.html:49
+msgid "Internationalization"
+msgstr ""
+
+#: data/templates/foot.html:50
+msgid "News"
+msgstr ""
+
+#: data/templates/foot.html:51
+msgid "Distribution"
+msgstr ""
+
+#: data/templates/foot.html:52
+msgid "Special Interest Groups (SIGs)"
+msgstr ""
+
+#: data/templates/foot.html:58
+msgid "Fedora is sponsored by Red Hat."
+msgstr ""
+
+#: data/templates/foot.html:59
+msgid "Learn more about the relationship between Red Hat and Fedora >"
+msgstr ""
+
+#: data/templates/foot.html:60
+msgid "&copy; 2009 Red Hat, Inc. and others."
+msgstr ""
+
+#: data/templates/foot.html:62
+msgid "Contact"
+msgstr ""
+
+#: data/templates/foot.html:63
+msgid "Sponsors"
+msgstr ""
+
+#: data/templates/foot.html:64
+msgid "Legal"
+msgstr ""
+
+#: data/templates/foot.html:65
+msgid "Trademark Guidelines"
+msgstr ""
+
+#: data/templates/foot.html:67
+msgid ""
+"The Fedora Project is maintained and driven by the community. This is a "
+"community maintained site. Red Hat is not responsible for content."
+msgstr ""
+
+#: data/templates/head.html:7
+msgid "Fedora Dorrie:"
+msgstr ""
+
+#: data/templates/head.html:9
+msgid "Login"
+msgstr ""
+
+#: data/templates/sidebar.html:9
+msgid "Website Language"
+msgstr ""
+

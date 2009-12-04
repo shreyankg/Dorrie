@@ -1,0 +1,59 @@
+<?python
+  area = "main"
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Spins Support')}</title>
+  </head>
+  <body>
+    <h2>${_('Spins Support')}</h2>
+    <h3>${_('Downloading spins / using BitTorrent.')}</h3>
+    <h4>${_('What is BitTorrent?')}</h4>
+    <p>${_('BitTorrent is a way to download information in cooperation with other computers. Each computer cooperating in the group downloads pieces of the information in a particular torrent from other peers in the group. Computers that have finished downloading all the data in a torrent remain in the swarm to seed, or provide data to other peers. If you download using BitTorrent, as a courtesy you should seed the torrent at least until you have uploaded the same amount of data you downloaded.')}</p>
+	<p>${_('If your computer does not have software installed for BitTorrent, visit the BitTorrent home page at &lt;a href="http://www.bittorrent.com/download/"&gt;http://www.bittorrent.com/download/&lt;/a&gt; to download it. BitTorrent client software is available for Windows, Mac OS, Linux, and many other operating systems.')}</p>
+	<p>${_('You do not need to find a special mirror for BitTorrent files. The BitTorrent protocol ensures that your computer participates in a nearby group.')}</p>
+	<h4>${_("What is a 'torrent' file?")}</h4>
+	<p>${_('A \'torrent\' file is a file you load into &lt;a href="http://www.bittorrent.com/btusers/what-is-bittorrent"&gt;BitTorrent software&lt;/a&gt; that tells it which computers to connect to in order to download the file that you ultimately want to download. In the case of the Fedora spins, the torrent files tell BitTorrent where it should connect in order to download the ISO file for a Fedora spin.')}</p>
+	<h4>${_("Okay, I downloaded the spin's 'torrent' file... now what?")}</h4>
+	<ul class="checkmark-list">
+		<li>${_('If you do not have BitTorrent software installed on your computer, visit &lt;a href="http://www.bittorrent.com/download"&gt;http://www.bittorrent.com/download&lt;/a&gt; and follow the instructions there to download the BitTorrent software of your choice.')}</li>
+		<li>${_('Start your BitTorrent software and open the torrent file for the spin you selected inside of BitTorrent.')}</li>
+		<li>${_("Depending on the BitTorrent software you are using, the ISO download may start automatically. If it does not look like the download is working, you may need to press a 'start download' or 'run torrent' button in your BitTorrent software to start the download.")}</li>
+		<li>${_('It may take anywhere from a few minutes to several hours to complete the ISO download depending on the available of other computers sharing the file. Your BitTorrent client will notify you when the download has completed successfully.')}</li>
+		<li>${_('Follow the steps below in order to use the spin ISO file.')}</li>
+	</ul>
+	<h3>${_('Using spin ISOs')}</h3>
+	<h4>${_('I have the spin ISO and I want to make a live CD or DVD. How do I do it?')}</h4>
+	<p>${_('Please refer to the &lt;a href="http://docs.fedoraproject.org/readme-burning-isos/"&gt;Fedora Burning ISO images to disc guide&lt;/a&gt; to learn how to create bootable disc media of a spin using its ISO.')}</p>
+	<h4>${_('I have the spin ISO and I want to make a live USB key. How do I do it?')}</h4>
+	<p>${_('You can use either a Windows or Linux system to create bootable USB media using a spin ISO file.')}</p>
+	<ul class="checkmark-list">
+		<li>${_('To begin, make sure there is sufficient free space available on the USB media. You will need 1 GB at a minimum. There is no need to repartition or reformat your media.')}</li>
+		<li>${_('Download and install the &lt;a href="https://fedorahosted.org/liveusb-creator/"&gt;LiveUSB creator software&lt;/a&gt;. The download and instructions are available at the LiveUSB Creator website.')}</li>
+		<li>${_('Follow the instructions given at the site and in the liveusb-creator program to create the bootable USB media.')}</li>
+	</ul>
+	<h3>${_('Using spin media / booting spins')}</h3>
+	<h4>${_("How do I start using the spin once I've created media for it?")}</h4>
+	<p>${_('Switch on your computer, and either load the Fedora live disc you created into the CD or DVD drive or insert your live USB key into a USB slot. Restart the computer with the disc still in the drive or the USB key still in the slot.')}</p>
+	<p>${_('Ideally, you should soon see the Fedora boot screen and a ten-second countdown. If you do not see this screen:')}</p>
+	<ul>
+		<li>${_('You may not have created your media properly. You cannot simply burn the ISO file to a disc. Please follow the steps referenced above to ensure you have valid media.')}</li>
+		<li>${_('You might need to select an option manually to make your computer boot from the live disc or live USB key.')}</li>
+	</ul>
+	<p>${_("Power your computer on, and watch the initial BIOS screen for a prompt that indicates which key to use for either a boot menu, or the BIOS setup utility. The 'boot menu' option is preferable. If you cannot see such a prompt, consult your manufacturer's documentation for your computer system, motherboard, or mainboard for the correct keystroke. On many systems, the required key will be F12, F2, F1, or Delete.")}</p>
+	<h3>${_('Creating spins')}</h3>
+	<h4>${_('I want to create my own Fedora spin! How can I do this?')}</h4>
+	<p>${_('Anyone can create their own Fedora spin using their own custom software and configuration selections. Here are a few resources you can use to learn more about creating your own spin:')}</p>
+	<h4>${_('Creating Spins')}</h4>
+	<ul>
+		<li><a href="http://fedoraproject.org/wiki/How_to_create_and_use_a_Live_CD">${_('How to Create a Live CD')}</a>${('  - steps to create and use a Live CD')}</li>
+		<li><a href="http://magazine.redhat.com/2007/05/31/remixing-fedora-7/">${_('Remixing Fedora 7')}</a> ${(' - by Max Spevack on Red Hat Magazine; walks through the tools available to create spins.')}</li>
+		<li><a href="http://fedoraproject.org/wiki/SIGs/Spins">${_('Fedora Spins SIG')}</a> ${(' - the Spins SIG is a good resource for learning more about the spin creation process.')}</li>
+		<li><a href="http://fedoraproject.org/wiki/Infrastructure/CustomSpins">${_('Infrastructure/Custom Spins')}</a> ${('  - steps to get your spin listed with other spins.')}</li>
+	</ul>
+  </body>
+</html>
