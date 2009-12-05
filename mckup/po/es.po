@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Master Spins\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-11-17 00:37-0600\n"
+"POT-Creation-Date: 2009-12-05 08:45+0530\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Claudio Rodrigo Pereyra Diaz <claudio@pereyradiaz.com.ar>\n"
 "Language-Team: Fedora Spanish <fedora-trans-es@redhat.com>\n"
@@ -157,62 +157,20 @@ msgstr "Ediciones de Fedora"
 msgid "Infrastructure/Custom Spins"
 msgstr ""
 
-#: data/content/index.html:28
+#: data/content/index.html:7
 msgid "Fedora Spins"
 msgstr "Ediciones de Fedora"
 
-#: data/content/index.html:31
+#: data/content/index.html:10
 msgid "Meet our spins."
 msgstr "Conoce nuestras ediciones."
 
-#: data/content/index.html:32
+#: data/content/index.html:11
 msgid "What is a spin? Fedora spins are alternate version of Fedora, tailored for various types of users via hand-picked application set or customizations."
 msgstr "¿Que es una edición? Las ediciones de Fedora son versiones alternativas de Fedora, adaptados para diferentes tipos de usuarios con un conjunto de aplicaciones o personalizaciones seleccionados a mano."
 
-#: data/content/index.html:33
+#: data/content/index.html:12
 msgid "Learn more about spins >"
-msgstr ""
-
-#: data/content/index.html:35
-msgid "By Popularity"
-msgstr "Por Popularidad"
-
-#: data/content/index.html:36
-msgid "Alphabetical Order"
-msgstr "Orden Alfabético"
-
-#: data/content/index.html:49
-msgid "downloads"
-msgstr ""
-
-#: data/content/index.html:51
-msgid "Learn more & download! >"
-msgstr ""
-
-#: data/content/index.html:55
-msgid "Note: Spin popularity is determined by number of downloads since the most recent Fedora release."
-msgstr ""
-
-#: data/content/index.html:76
-#, fuzzy
-msgid "Meet the Spin Community"
-msgstr "Ediciones de la Comunidad"
-
-#: data/content/index.html:79
-#, fuzzy
-msgid "Chitlesh Goorah, Fedora Electoric Lab"
-msgstr "Acerca de la Edición: Laboratorio Electrónico Fedora"
-
-#: data/content/index.html:80 data/content/community/index.html:18
-msgid "\"At the very beginning, there was neither the intention for a Fedora Electronic Lab nor its spin. During my post-graduate studies in Micro-Nano Electronic Engineering, I needed VLSI simulation tools. I started packaging the VLSI simulation tools for Fedora, which I needed for my studies. Then MirjamWaeckerlin and my lecturers in Strasbourg, France, encouraged the concept of introducing Application-Specific Integrated Circuit (ASIC) Design Flows on Fedora, so that they can recommend to other students or use those tools themselves.\""
-msgstr ""
-
-#: data/content/index.html:82 data/content/community/index.html:18
-msgid "Read more of this interview with Chitlesh >"
-msgstr ""
-
-#: data/content/index.html:83
-msgid "Read more spins community interviews >"
 msgstr ""
 
 #: data/content/support.html:10 data/content/support.html:13
@@ -343,1203 +301,7 @@ msgstr ""
 msgid "Anyone can create their own Fedora spin using their own custom software and configuration selections. Here are a few resources you can use to learn more about creating your own spin:"
 msgstr ""
 
-#: data/content/aos/index.html:10
-msgid "About Spin: AOS"
-msgstr "Acerca de la Edición: AOS"
-
-#: data/content/aos/index.html:15 data/content/aos/index.html:24
-#: data/content/broffice/index.html:15 data/content/broffice/index.html:23
-#: data/content/edu/index.html:15 data/content/edu/index.html:24
-#: data/content/fel/index.html:15 data/content/fel/index.html:24
-#: data/content/kde/index.html:15 data/content/kde/index.html:24
-#: data/content/lxde/index.html:15 data/content/lxde/index.html:21
-#: data/content/xfce/index.html:15 data/content/xfce/index.html:24
-msgid "Home"
-msgstr ""
-
-#: data/content/aos/index.html:16 data/content/aos/index.html:29
-#, fuzzy
-msgid "About AOS"
-msgstr "Acerca de la Edición: AOS"
-
-#: data/content/aos/index.html:17 data/content/aos/index.html:33
-#: data/content/broffice/index.html:16 data/content/broffice/index.html:28
-#: data/content/edu/index.html:17 data/content/edu/index.html:35
-#: data/content/fel/index.html:17 data/content/fel/index.html:48
-#: data/content/games/index.html:16 data/content/games/index.html:598
-#: data/content/kde/index.html:17 data/content/kde/index.html:87
-#: data/content/lxde/index.html:16 data/content/lxde/index.html:25
-#: data/content/xfce/index.html:17 data/content/xfce/index.html:35
-msgid "Downloads"
-msgstr ""
-
-#: data/content/aos/index.html:18 data/content/aos/index.html:46
-#: data/content/broffice/index.html:17 data/content/broffice/index.html:34
-#: data/content/edu/index.html:18 data/content/edu/index.html:39
-#: data/content/fel/index.html:18 data/content/fel/index.html:52
-#: data/content/kde/index.html:18 data/content/kde/index.html:95
-#: data/content/xfce/index.html:18 data/content/xfce/index.html:40
-#: data/templates/foot.html:23 data/templates/head.html:9
-#, fuzzy
-msgid "Support"
-msgstr "Soporte para Ediciones"
-
-#: data/content/aos/index.html:25
-msgid "Appliances are pre-installed, pre-configured, system images. This Spin is intended to make it easier for anyone (ISVs, developers, OEMS, etc) to create and deploy virtual appliances. The AOS (The Appliance Operating System) is a scaled down version of Fedora with a small footprint containing only the packages necessary to run an appliance."
-msgstr ""
-
-#: data/content/aos/index.html:26
-msgid "The hardware supported by this spin of Fedora would be limited, primarily focusing on virtual containers such as KVM and VMware. The goal is to create a base that developers can build their applications on top of, only pulling in packages that their software requires. A \"start from the bottom and build up\" mentality."
-msgstr ""
-
-#: data/content/aos/index.html:30
-msgid "The Appliance Operating System (AOS) is a minimal operating system definition, containing only the packages necessary to run an appliance. The AOS is meant to be a base, on which new appliance's can be built on top of and customized for a specific application. The AOS is described in a kickstart file and is hosted in the Fedora Spins KickstartPool, this definition is meant to evolve over time to become a smaller, more usable base appliance defination. The AOS is designed to work as a virtual machine or as a traditional locked down bare metal appliance."
-msgstr ""
-
-#: data/content/aos/index.html:34
-msgid "The AOS is currently available in Fedora 10 as a Fedora Spin, which is a pre-build \"binary blob.\" The blob is packaged as a tarball, and includes a raw disk image and meta data required to run the appliance in a virtual container. The AOS image can be here."
-msgstr ""
-
-#: data/content/aos/index.html:35
-msgid "Once downloaded, you can launch the AOS as a virtual appliance on a Fedora using the following steps, It is recommended to be running F-10 or greater this should also work with F-9 or Rawhide."
-msgstr ""
-
-#: data/content/aos/index.html:37
-msgid "Install all prerequisite virt tools using yum: *note to use kvm you must be running a full virt box"
-msgstr ""
-
-#: data/content/aos/index.html:38
-msgid "Unpack the tarball containing the AOS:"
-msgstr ""
-
-#: data/content/aos/index.html:39
-msgid "Use virt-imge to launch the image:"
-msgstr ""
-
-#: data/content/aos/index.html:40
-msgid "Use \"virsh list\" to see if its running and get the IDNUM"
-msgstr ""
-
-#: data/content/aos/index.html:41
-msgid "Connect to appliance and log in to verify its running:"
-msgstr ""
-
-#: data/content/aos/index.html:48
-msgid "IRC: #thincrust on freenode"
-msgstr ""
-
-#: data/content/aos/index.html:49
-msgid "Discussion of this project takes places at the <a href=\"mailto:thincrust-devel@redhat.com\">thincrust-devel@redhat.com mailing list</a>:"
-msgstr ""
-
-#: data/content/broffice/index.html:10
-msgid "About Spin: BrOffice.org"
-msgstr "Acerca de la Edición: BrOffice.org"
-
-#: data/content/broffice/index.html:25
-msgid "The BrOffice.org spin aims to provide a complete set of tools for office use. It was created to provide the legal brand for OpenOffice.org in Brazil. This spin is targeted not only for users from Brazil but also for people from other Latin American countries who attend to brazilian open source events such FISL and Latinoware or for those who just would like to have the whole BrOffice.org office suite in a Live image."
-msgstr ""
-
-#: data/content/broffice/index.html:29
-msgid "This is the latest version of Fedora including all BrOffice.org applications. It includes a word processor, a spreadsheet, a presentation program, a database management application, a vector graphics editor and a tool for editing mathematical formulas."
-msgstr ""
-
-#: data/content/broffice/index.html:30
-msgid "If you want to try an open source operating system with an open source office application suite you are in the right place!"
-msgstr ""
-
-#: data/content/broffice/index.html:35
-msgid "If you would like to ask questions about the BrOffice.org Spin we recommend that you use local community forums such <a href=\"http://www.projetofedora.org/forum/\">http://www.projetofedora.org/forum/</a> for Brazilian Portuguese speakers, <a href=\"http://proyectofedora.org/forum/\">http://proyectofedora.org/forum/</a> for Spanish speakers or <a href=\"http://fedoraforum.org/\">http://fedoraforum.org/</a> for English and other language speakers."
-msgstr ""
-
-#: data/content/broffice/index.html:36
-msgid "If you would like to ask specific questions about BrOffice.org or OpenOffice.org we recommend that you visit <a href=\"http://broffice.org/\">http://broffice.org/</a> or <a href=\"http://www.openoffice.org/\">http://www.openoffice.org/</a> for more information."
-msgstr ""
-
-#: data/content/broffice/index.html:46 data/content/edu/index.html:52
-msgid "Screenshot"
-msgstr ""
-
-#: data/content/broffice/index.html:47
-msgid "Screenshot of the BrOffice splash on startup."
-msgstr ""
-
-#: data/content/community/adammiller.html:10
-#: data/content/community/chitleshgoorah.html:10
-#: data/content/community/index.html:10
-#, fuzzy
-msgid "Spins Community Focus Feature"
-msgstr "Ediciones de la Comunidad"
-
-#: data/content/community/adammiller.html:13
-#: data/content/community/chitleshgoorah.html:13
-#: data/content/community/index.html:13
-msgid "Spins Community"
-msgstr "Ediciones de la Comunidad"
-
-#: data/content/community/adammiller.html:14
-msgid "Spins Creator Interview: Adam Miller, XFCE Desktop"
-msgstr ""
-
-#: data/content/community/chitleshgoorah.html:14
-#, fuzzy
-msgid "Spins Creator Interview: Chitlesh Goorah, Fedora Electronic Lab"
-msgstr "Acerca de la Edición: Laboratorio Electrónico Fedora"
-
-#: data/content/community/index.html:14
-msgid "Spins Creator Interviews"
-msgstr ""
-
-#: data/content/community/index.html:23
-msgid "\"Xfce is an open source desktop environment with the goals to be simple and fast, it is a wonderful solution to making your desktop environment faster while still being extremely customizable and feature rich. Xfce has a very clean interface, its simple but not so simple that its lacking, and it has an overall professional feel to it.\""
-msgstr ""
-
-#: data/content/community/index.html:23
-msgid "Read more of this interview with Adam >"
-msgstr ""
-
-#: data/content/edu/index.html:10
-msgid "About Spin: Education"
-msgstr "Acerca de la Edición: Educación"
-
-#: data/content/edu/index.html:16 data/content/edu/index.html:29
-#, fuzzy
-msgid "About Education"
-msgstr "Acerca de la Edición: Educación"
-
-#: data/content/edu/index.html:25
-msgid "The purpose of this spin is to create a ready-to-go development environment for contributing to educational projects inside, but also outside of the Fedora ecosystem."
-msgstr ""
-
-#: data/content/edu/index.html:26 data/content/kde/index.html:35
-#: data/content/kde/index.html:57 data/content/kde/index.html:80
-#: data/content/xfce/index.html:25 data/content/xfce/index.html:31
-msgid "Click image to enlarge"
-msgstr ""
-
-#: data/content/edu/index.html:30
-msgid "Have you ever wanted to contribute - or get others to contribute - to an open source education project, but never found the time to set up and get started? We've got a ready-to-go contributors' (not just code!) environment for you!"
-msgstr ""
-
-#: data/content/edu/index.html:31
-msgid "Providing students and teachers with a variety of development environments, tools, documentation, and getting-started resources, the Fedora Education SIG achieves its goal of lowering the entry barrier to contributing as much as possible."
-msgstr ""
-
-#: data/content/edu/index.html:32
-msgid "The Education Spin features a number of well-received solutions, such as the award-winning Sugar Desktop Environment - as seen on the OLPC and Sugar on a Stick - and the popular KDE Education applications. It also contains a complete Eclipse development stack and other tools, allowing not only an exploration, but also the creation of code."
-msgstr ""
-
-#: data/content/edu/index.html:40
-msgid "Following the goal of making it as easy as possible for students and teachers to dive into open source projects, the Fedora Education Spin comes with a variety of support options."
-msgstr ""
-
-#: data/content/edu/index.html:41
-msgid "You can always reach us on IRC in #fedora-edu on Freenode, where you will be automatically connected to when using the included XChat application. Additionally, we encourage you to check the channels of other projects, especially the Sugar Labs (#sugar) and Teaching Open Source (#teachingopensource) ones."
-msgstr ""
-
-#: data/content/edu/index.html:42
-msgid "In case you prefer sending an e-mail, you can direct thoughts and feedback at the <a href=\"http://www.redhat.com/mailman/listinfo/fedora-education-list\">Fedora Education Mailing List</a>."
-msgstr ""
-
-#: data/content/edu/index.html:51 data/content/kde/index.html:74
-#, fuzzy
-msgid "Education"
-msgstr "Acerca de la Edición: Educación"
-
-#: data/content/edu/index.html:53
-msgid "Screenshot of the Education desktop"
-msgstr ""
-
-#: data/content/fel/index.html:10
-msgid "About Spin: Fedora Electronic Lab"
-msgstr "Acerca de la Edición: Laboratorio Electrónico Fedora"
-
-#: data/content/fel/index.html:16 data/content/fel/index.html:30
-#, fuzzy
-msgid "About FEL"
-msgstr "Fedora"
-
-#: data/content/fel/index.html:25
-msgid "Fedora's Electronic Laboratory empowers you with an advanced opensource electronic design and simulation platform for micro-nano electronics engineering. FEL is dedicated to support the innovation and development brought by opensource Electronic Design Automation (EDA) community."
-msgstr ""
-
-#: data/content/fel/index.html:27
-msgid "Fedora Electronic Lab is free. No licenses required. No kernel patches are required, making it easy to deploy and use in production environment."
-msgstr ""
-
-#: data/content/fel/index.html:31
-msgid "Fedora's Electronic Laboratory, an opensource hardware design and simulation platform, is dedicated to support the innovation and development brought by opensource Electronic Design Automation (EDA) community."
-msgstr ""
-
-#: data/content/fel/index.html:32
-msgid "Fedora Electronic Laboratory provides a complete electronic laboratory setup with reliable open source design tools in order to help you keep in pace with current technological race. It reduces the risk assessment of open source hardware development and enable electronic designers tapeout quickly and efficiently."
-msgstr ""
-
-#: data/content/fel/index.html:33
-msgid "Fedora Electronic Lab targets mainly the Micro-Nano Electronic Engineering field. It introduces:"
-msgstr ""
-
-#: data/content/fel/index.html:36
-msgid "A collection of Perl modules to extend Verilog and VHDL support."
-msgstr ""
-
-#: data/content/fel/index.html:37
-msgid "Tools for Application-Specific Integrated Circuit (ASIC) Design Flow process."
-msgstr ""
-
-#: data/content/fel/index.html:38
-msgid "Extra standard cell libraries supporting a feature size of 0.13µm. (more than 300 MB)"
-msgstr ""
-
-#: data/content/fel/index.html:39
-msgid "Extracted spice decks which can be simulated with gnucap/ngspice or any spice simulators."
-msgstr ""
-
-#: data/content/fel/index.html:40
-msgid "Interoperability between various packages in order to achieve different design flows."
-msgstr ""
-
-#: data/content/fel/index.html:41
-msgid "Tools for embedded design and to provide support for ARM as a secondary architecture in Fedora."
-msgstr ""
-
-#: data/content/fel/index.html:42
-msgid "A tool set for Openmoko development and other open source hardware communities."
-msgstr ""
-
-#: data/content/fel/index.html:43
-msgid "A peer review eeb-based solution coupled with an Eclipse IDE for Embedded/Digital Hardware IP design."
-msgstr ""
-
-#: data/content/fel/index.html:44
-msgid "PLA tools, C-based design methodologies, simulators for 8051 and 8085 microcontrollers and many more."
-msgstr ""
-
-#: data/content/games/index.html:10
-msgid "About Spin: Games"
-msgstr "Acerca de la Edición: Juegos"
-
-#: data/content/games/index.html:15 data/content/kde/index.html:79
-#: data/content/kde/index.html:131
-msgid "Games"
-msgstr ""
-
-#: data/content/games/index.html:22
-msgid "Games Listing"
-msgstr ""
-
-#: data/content/games/index.html:23
-msgid "All of the following games are available in the Fedora Games Spin:"
-msgstr ""
-
-#: data/content/games/index.html:26
-msgid "A scrolling, platform-jumping, ancient pyramid exploring game."
-msgstr ""
-
-#: data/content/games/index.html:27 data/content/games/index.html:32
-#: data/content/games/index.html:37 data/content/games/index.html:42
-#: data/content/games/index.html:47 data/content/games/index.html:52
-#: data/content/games/index.html:57 data/content/games/index.html:67
-#: data/content/games/index.html:72 data/content/games/index.html:77
-#: data/content/games/index.html:82 data/content/games/index.html:87
-#: data/content/games/index.html:92 data/content/games/index.html:97
-#: data/content/games/index.html:102 data/content/games/index.html:107
-#: data/content/games/index.html:112 data/content/games/index.html:117
-#: data/content/games/index.html:122 data/content/games/index.html:127
-#: data/content/games/index.html:132 data/content/games/index.html:137
-#: data/content/games/index.html:147 data/content/games/index.html:152
-#: data/content/games/index.html:157 data/content/games/index.html:162
-#: data/content/games/index.html:167 data/content/games/index.html:172
-#: data/content/games/index.html:177 data/content/games/index.html:182
-#: data/content/games/index.html:187 data/content/games/index.html:192
-#: data/content/games/index.html:197 data/content/games/index.html:202
-#: data/content/games/index.html:207 data/content/games/index.html:212
-#: data/content/games/index.html:217 data/content/games/index.html:222
-#: data/content/games/index.html:227 data/content/games/index.html:232
-#: data/content/games/index.html:237 data/content/games/index.html:242
-#: data/content/games/index.html:247 data/content/games/index.html:252
-#: data/content/games/index.html:257 data/content/games/index.html:262
-#: data/content/games/index.html:267 data/content/games/index.html:272
-#: data/content/games/index.html:277 data/content/games/index.html:282
-#: data/content/games/index.html:287 data/content/games/index.html:292
-#: data/content/games/index.html:297 data/content/games/index.html:302
-#: data/content/games/index.html:307 data/content/games/index.html:311
-#: data/content/games/index.html:316 data/content/games/index.html:321
-#: data/content/games/index.html:326 data/content/games/index.html:331
-#: data/content/games/index.html:335 data/content/games/index.html:339
-#: data/content/games/index.html:343 data/content/games/index.html:347
-#: data/content/games/index.html:351 data/content/games/index.html:355
-#: data/content/games/index.html:359 data/content/games/index.html:363
-#: data/content/games/index.html:367 data/content/games/index.html:370
-#: data/content/games/index.html:374 data/content/games/index.html:378
-#: data/content/games/index.html:382 data/content/games/index.html:386
-#: data/content/games/index.html:390 data/content/games/index.html:394
-#: data/content/games/index.html:398 data/content/games/index.html:402
-#: data/content/games/index.html:406 data/content/games/index.html:410
-#: data/content/games/index.html:414 data/content/games/index.html:418
-#: data/content/games/index.html:422 data/content/games/index.html:426
-#: data/content/games/index.html:430 data/content/games/index.html:434
-#: data/content/games/index.html:438 data/content/games/index.html:442
-#: data/content/games/index.html:446 data/content/games/index.html:450
-#: data/content/games/index.html:454 data/content/games/index.html:458
-#: data/content/games/index.html:462 data/content/games/index.html:466
-#: data/content/games/index.html:470 data/content/games/index.html:474
-#: data/content/games/index.html:478 data/content/games/index.html:482
-#: data/content/games/index.html:486 data/content/games/index.html:490
-#: data/content/games/index.html:495 data/content/games/index.html:500
-#: data/content/games/index.html:505 data/content/games/index.html:510
-#: data/content/games/index.html:515 data/content/games/index.html:520
-#: data/content/games/index.html:525 data/content/games/index.html:530
-#: data/content/games/index.html:535 data/content/games/index.html:540
-#: data/content/games/index.html:545 data/content/games/index.html:550
-#: data/content/games/index.html:555 data/content/games/index.html:560
-#: data/content/games/index.html:565 data/content/games/index.html:570
-#: data/content/games/index.html:575 data/content/games/index.html:580
-#: data/content/games/index.html:585 data/content/games/index.html:590
-#: data/content/games/index.html:595
-msgid "Visit homepage >"
-msgstr ""
-
-#: data/content/games/index.html:31
-msgid "The classic Crack-Dot-Com game."
-msgstr ""
-
-#: data/content/games/index.html:36
-msgid "Platform game involving an alligator."
-msgstr ""
-
-#: data/content/games/index.html:41
-msgid "Multiplayer retro sci-fi deathmatch game."
-msgstr ""
-
-#: data/content/games/index.html:46
-msgid "Action-loaded 2D arcade shooter game."
-msgstr ""
-
-#: data/content/games/index.html:51
-msgid "Action-puzzle game."
-msgstr ""
-
-#: data/content/games/index.html:56
-msgid "A lightcycle game in 3D."
-msgstr ""
-
-#: data/content/games/index.html:61
-msgid "A turn-based strategy game."
-msgstr ""
-
-#: data/content/games/index.html:66
-msgid "Hardcore 3D space shooter with spaceship upgrade possibilities."
-msgstr ""
-
-#: data/content/games/index.html:71
-msgid "Game inspired by the classic Loderunner."
-msgstr ""
-
-#: data/content/games/index.html:76
-msgid "Move the paddle to bounce the ball and break all the bricks."
-msgstr ""
-
-#: data/content/games/index.html:81
-msgid "Platform game with some puzzle elements."
-msgstr ""
-
-#: data/content/games/index.html:86
-msgid "Graphical sci-fi adventure game."
-msgstr ""
-
-#: data/content/games/index.html:91
-msgid "Mission- and objective-based 2D platform game."
-msgstr ""
-
-#: data/content/games/index.html:96
-msgid "The GNU Bombing utility."
-msgstr ""
-
-#: data/content/games/index.html:101
-msgid "A futuristic real-time strategy game."
-msgstr ""
-
-#: data/content/games/index.html:106
-msgid "Football (soccer) team management game."
-msgstr ""
-
-#: data/content/games/index.html:111
-msgid "3D multiplayer tank battle game."
-msgstr ""
-
-#: data/content/games/index.html:116
-msgid "An arcade shoot 'em up."
-msgstr ""
-
-#: data/content/games/index.html:121
-msgid "OpenGL real-time visual space simulation."
-msgstr ""
-
-#: data/content/games/index.html:126
-msgid "Suite of educational games for young children."
-msgstr ""
-
-#: data/content/games/index.html:131
-msgid "Lay bombs and blast the other players of the field game using ClanLib."
-msgstr ""
-
-#: data/content/games/index.html:136
-msgid "Allows people to play Titan against each other or AIs."
-msgstr ""
-
-#: data/content/games/index.html:141
-msgid "A puzzle action game."
-msgstr ""
-
-#: data/content/games/index.html:146
-msgid "SDL/OpenGL space shoot 'em up game also known as critter."
-msgstr ""
-
-#: data/content/games/index.html:151
-msgid "Client for connecting to crossfire servers."
-msgstr ""
-
-#: data/content/games/index.html:156
-msgid "Falling blocks, match 3 or more of the same color crystals."
-msgstr ""
-
-#: data/content/games/index.html:161
-msgid "Shoot 'em up arcade game."
-msgstr ""
-
-#: data/content/games/index.html:166
-msgid "One on one spaceship duel in a 2D arena."
-msgstr ""
-
-#: data/content/games/index.html:171
-msgid "A top down graphical (3D) RPG in the spirit of Nethack."
-msgstr ""
-
-#: data/content/games/index.html:176
-msgid "Clone of the ATARI game Oxyd."
-msgstr ""
-
-#: data/content/games/index.html:181
-msgid "Extensible block-pushing puzzle game."
-msgstr ""
-
-#: data/content/games/index.html:186
-msgid "3D racing game featuring Tux."
-msgstr ""
-
-#: data/content/games/index.html:191
-msgid "Falling block game."
-msgstr ""
-
-#: data/content/games/index.html:196
-msgid "Fish Fillets Next Generation, a puzzle game with 70 levels."
-msgstr ""
-
-#: data/content/games/index.html:201
-msgid "3D flight simulator."
-msgstr ""
-
-#: data/content/games/index.html:206 data/content/games/index.html:330
-msgid "Adventure game."
-msgstr ""
-
-#: data/content/games/index.html:211
-msgid "OpenGL billiards game."
-msgstr ""
-
-#: data/content/games/index.html:216
-msgid "Multiplayer empire-building strategy game."
-msgstr ""
-
-#: data/content/games/index.html:221
-msgid "Turn-based multiplayer strategy game."
-msgstr ""
-
-#: data/content/games/index.html:226
-msgid "First-player shoot 'em up using the Doom game engines."
-msgstr ""
-
-#: data/content/games/index.html:231
-msgid "Role-playin game with Freedroid theme and Tux as the hero."
-msgstr ""
-
-#: data/content/games/index.html:236
-msgid "Arcade game that may be played single player or multiplayer over a network."
-msgstr ""
-
-#: data/content/games/index.html:241
-msgid "Education suite for kids 2-10 years of age."
-msgstr ""
-
-#: data/content/games/index.html:246
-msgid "Falling blocks puzzle game."
-msgstr ""
-
-#: data/content/games/index.html:251
-msgid "Action flight simulator."
-msgstr ""
-
-#: data/content/games/index.html:256
-msgid "An OpenGL space shooter."
-msgstr ""
-
-#: data/content/games/index.html:261
-msgid "3D real-time strategy game."
-msgstr ""
-
-#: data/content/games/index.html:266
-msgid "An innovative real-time strategy game."
-msgstr ""
-
-#: data/content/games/index.html:271
-msgid "A backgammon game an analyzer."
-msgstr ""
-
-#: data/content/games/index.html:276
-msgid "A text-based Go program."
-msgstr ""
-
-#: data/content/games/index.html:281
-msgid "Swapping gem game."
-msgstr ""
-
-#: data/content/games/index.html:286
-msgid "A full-featured role-playing game. Uses the Nazghul game engine."
-msgstr ""
-
-#: data/content/games/index.html:291
-msgid "2D tankbattle game with the tanks replaced by hedgehogs."
-msgstr ""
-
-#: data/content/games/index.html:296
-msgid "3rd-person scrolling 2D shooter."
-msgstr ""
-
-#: data/content/games/index.html:301
-msgid "Aracde-style shoot 'em up."
-msgstr ""
-
-#: data/content/games/index.html:306
-msgid "Brickbuster arcade game."
-msgstr ""
-
-#: data/content/games/index.html:310
-msgid "City simulation game."
-msgstr ""
-
-#: data/content/games/index.html:315
-msgid "Multiplayer wargame with liquid armies."
-msgstr ""
-
-#: data/content/games/index.html:320
-msgid "Atomix clone where you create figures out of marbles."
-msgstr ""
-
-#: data/content/games/index.html:325
-msgid "Online multiplayer version of a well known detective boardgame."
-msgstr ""
-
-#: data/content/games/index.html:334
-msgid "A futuristic ball game with simple rules."
-msgstr ""
-
-#: data/content/games/index.html:338
-msgid "Space combat game."
-msgstr ""
-
-#: data/content/games/index.html:342
-msgid "Push ice blocks around to extenguish all fires."
-msgstr ""
-
-#: data/content/games/index.html:346
-msgid "2D MMORPG world."
-msgstr ""
-
-#: data/content/games/index.html:350
-msgid "3D stunt driving game."
-msgstr ""
-
-#: data/content/games/index.html:354
-msgid "2D platform game."
-msgstr ""
-
-#: data/content/games/index.html:358
-msgid "Puzzle game where you steer a beam of light using mirrors."
-msgstr ""
-
-#: data/content/games/index.html:362
-msgid "A rogue-like single player dungeon exploration game."
-msgstr ""
-
-#: data/content/games/index.html:366
-msgid "Nethack game."
-msgstr ""
-
-#: data/content/games/index.html:369
-msgid "An online multiplayer tactical warfare game."
-msgstr ""
-
-#: data/content/games/index.html:373
-msgid "Roll a ball through an obstacle course."
-msgstr ""
-
-#: data/content/games/index.html:377
-msgid "Maze-game, eat all the cookies while avoiding the badguys."
-msgstr ""
-
-#: data/content/games/index.html:381
-msgid "3D space shooter."
-msgstr ""
-
-#: data/content/games/index.html:385
-msgid "Addictive realtime multiplayer 2D shoot-em-up."
-msgstr ""
-
-#: data/content/games/index.html:389
-msgid "Platform game."
-msgstr ""
-
-#: data/content/games/index.html:393
-msgid "Pinball game."
-msgstr ""
-
-#: data/content/games/index.html:397
-msgid "Guide the penguins safely home before they drop of the cliff."
-msgstr ""
-
-#: data/content/games/index.html:401
-msgid "Turn-based board strategy game (colonize an island.)"
-msgstr ""
-
-#: data/content/games/index.html:405
-msgid "Connect the water pipes to create a proper pipeline."
-msgstr ""
-
-#: data/content/games/index.html:409 data/content/games/index.html:544
-msgid "A pipe-connecting game."
-msgstr ""
-
-#: data/content/games/index.html:413
-msgid "A celestial simulator."
-msgstr ""
-
-#: data/content/games/index.html:417
-msgid "GTK poker client to play on a poker network server."
-msgstr ""
-
-#: data/content/games/index.html:421
-msgid "Arcade 2D shoot-them-up game."
-msgstr ""
-
-#: data/content/games/index.html:425
-msgid "Chess game for GNOME."
-msgstr ""
-
-#: data/content/games/index.html:429
-msgid "A collection of solitare card games."
-msgstr ""
-
-#: data/content/games/index.html:433
-msgid "A multi-purpose board game GUI."
-msgstr ""
-
-#: data/content/games/index.html:437
-msgid "2d top-down shoot 'em up."
-msgstr ""
-
-#: data/content/games/index.html:441
-msgid "Arcade game where you drive a toy wood engine."
-msgstr ""
-
-#: data/content/games/index.html:445
-msgid "Underground digging game."
-msgstr ""
-
-#: data/content/games/index.html:449
-msgid "The original graphical adventure game."
-msgstr ""
-
-#: data/content/games/index.html:453
-msgid "Game based loosely on the classic DOS game Scorched Earth."
-msgstr ""
-
-#: data/content/games/index.html:457
-msgid "Realtime remake of Scorched Earth."
-msgstr ""
-
-#: data/content/games/index.html:461
-msgid "Help Barbie the seahorse float on bubbles to the moon."
-msgstr ""
-
-#: data/content/games/index.html:465
-msgid "Space invaders / Galaxians like game with powerups."
-msgstr ""
-
-#: data/content/games/index.html:469
-msgid "A python port of SolarFox."
-msgstr ""
-
-#: data/content/games/index.html:473
-msgid "SDL port of the sopwith game."
-msgstr ""
-
-#: data/content/games/index.html:477
-msgid "Photo-realistic nightsky renderer."
-msgstr ""
-
-#: data/content/games/index.html:481
-msgid "Simulated obstacle course for automobiles."
-msgstr ""
-
-#: data/content/games/index.html:485
-msgid "Jump'n run-like game."
-msgstr ""
-
-#: data/content/games/index.html:489
-msgid "Kids 3D go-kart racing game featuring Tux."
-msgstr ""
-
-#: data/content/games/index.html:494
-msgid "Game where you pilot a taxi in space."
-msgstr ""
-
-#: data/content/games/index.html:499
-msgid "A brick-busting game."
-msgstr ""
-
-#: data/content/games/index.html:504
-msgid "The open racing car simulator."
-msgstr ""
-
-#: data/content/games/index.html:509
-msgid "Steer a marble ball through a labyrinth "
-msgstr ""
-
-#: data/content/games/index.html:514
-msgid "First-person shooter game, using the Quake 3 engine."
-msgstr ""
-
-#: data/content/games/index.html:519
-msgid "Drawing program designed for young children."
-msgstr ""
-
-#: data/content/games/index.html:524
-msgid "Extra stamp files for TuxPaint."
-msgstr ""
-
-#: data/content/games/index.html:529
-msgid "An educational typing tutor for children."
-msgstr ""
-
-#: data/content/games/index.html:534
-msgid "Simple roguelike game."
-msgstr ""
-
-#: data/content/games/index.html:539
-msgid "Remake of the famous DOS-game \"Stunts\"."
-msgstr ""
-
-#: data/content/games/index.html:549
-msgid "Innovative 3D real-time strategy."
-msgstr ""
-
-#: data/content/games/index.html:554
-msgid "Turn-based strategy game with a fantasy theme."
-msgstr ""
-
-#: data/content/games/index.html:559
-msgid "Open source realtime-strategy game."
-msgstr ""
-
-#: data/content/games/index.html:564
-msgid "Side-scrolling shoot 'em up 80's style arcade game."
-msgstr ""
-
-#: data/content/games/index.html:569
-msgid "Side-scrolling platform and shoot 'em up action-game."
-msgstr ""
-
-#: data/content/games/index.html:574
-msgid "2D convivial mass murder game."
-msgstr ""
-
-#: data/content/games/index.html:579
-msgid "Lay bombs and blast the other players of the field (SDL version)."
-msgstr ""
-
-#: data/content/games/index.html:584
-msgid "Arcade game: shoot down the space ships attacking the planet."
-msgstr ""
-
-#: data/content/games/index.html:589
-msgid "Challenging 2D motocross platform game."
-msgstr ""
-
-#: data/content/games/index.html:594
-msgid "Asteroid-like game with powerups."
-msgstr ""
-
-#: data/content/games/index.html:601
-msgid "This is the latest version of the Fedora Linux operating system's Games spin. It's everything you need to try out Fedora's games spin--you don't have to erase anything on your current system to try it out, and it won't put your files at risk. Take the Fedora Games spin for a test drive, and if you like it, you can install it directly to your hard drive straight from the Live Media desktop if you like. <a href=\"/support\">Read more about using and installing from live media</a>."
-msgstr ""
-
-#: data/content/kde/index.html:10
-msgid "About Spin: KDE"
-msgstr "Acerca de la Edición: KDE"
-
-#: data/content/kde/index.html:16 data/content/kde/index.html:31
-#, fuzzy
-msgid "About KDE"
-msgstr "Acerca de la Edición: KDE"
-
-#: data/content/kde/index.html:25
-msgid "The Fedora KDE Desktop Edition is a powerful Fedora-based operating system utilizing the K Desktop Environment as the main user interface. Fedora KDE comes with many pre-selected top quality applications that suit all modern desktop use cases - from online communication like web browsing, instant messaging and electronic mail correspondence, through multimedia and entertainment, to an advanced productivity suite, including office applications and enterprise grade personal information management. All KDE applications are well integrated, with a similar look and feel and an easy to use interface, accompanied by an outstanding graphical appearance."
-msgstr ""
-
-#: data/content/kde/index.html:27
-msgid "The Fedora KDE Desktop Edition is based on the latest KDE 4 technology as provided by KDE open source community."
-msgstr ""
-
-#: data/content/kde/index.html:28
-msgid "Go to <a href=\"#about\">About KDE</a> if you want to know more! It's your desktop."
-msgstr ""
-
-#: data/content/kde/index.html:32 data/content/xfce/index.html:78
-#: data/content/xfce/index.html:88
-msgid "Desktop"
-msgstr ""
-
-#: data/content/kde/index.html:33 data/content/kde/index.html:111
-msgid "Plasma"
-msgstr ""
-
-#: data/content/kde/index.html:34
-msgid "Plasma provides the desktop interface for KDE 4, including the application launcher (start menu), the desktop and the desktop panel (often referred to simply as the task bar)."
-msgstr ""
-
-#: data/content/kde/index.html:36
-msgid "You can use Plasma as you would use the desktop of any other operating system, by accessing the application menu (K Menu), viewing the currently active programs on the taskbar, accessing icons on the system tray, and so on."
-msgstr ""
-
-#: data/content/kde/index.html:37
-msgid "An important part of Plasma are the so-called widgets, and the customization these widgets allow. Widgets are the individual units of the desktop and they include the application menu, icons, the system tray, the clock, along with countless other widgets. Widgets can exist on the desktop itself, or be inserted in the panel. Panels and desktops are actually special kinds of widgets, meant to contain other widgets (in Plasma terms, they are called \"Containments\")."
-msgstr ""
-
-#: data/content/kde/index.html:38
-msgid "More info available at <a href=\"http://userbase.kde.org/Plasma\">http://userbase.kde.org/Plasma</a>"
-msgstr ""
-
-#: data/content/kde/index.html:39
-msgid "Desktop Effects"
-msgstr ""
-
-#: data/content/kde/index.html:40
-msgid "Kwin (the default KDE window manager) supports this cool compositing effects like the Desktop Cube Animation, where each virtual desktop is displayed on a side of a cube. Wobbly windows, which can explode when they are closed or fall apart. And of course lots more interesting effects."
-msgstr ""
-
-#: data/content/kde/index.html:41
-msgid "Enjoy one of the example videos here:"
-msgstr ""
-
-#: data/content/kde/index.html:42
-msgid "Note: Desktop effects are not enabled by default! You need a supported graphics card and to enable it in the System settings -> Desktop configuration tool."
-msgstr ""
-
-#: data/content/kde/index.html:44
-msgid "Going online"
-msgstr ""
-
-#: data/content/kde/index.html:45
-msgid "With the latest technology spearheaded by Red Hat, the NetworkManager set of tools, and its system tray Applet, it's just a click and you're connected to your wireless LAN router, or online via many supported 3G mobile broadband cards. Explore the World Wide Web with Konqueror, the full featured KDE web browser."
-msgstr ""
-
-#: data/content/kde/index.html:46
-msgid "Stay connected with your friends and colleagues using <strong>Kopete</strong> Instant Messaging client. It supports all common IM protocols and has a really nice user interface with the ability to group more protocols under one contact. Your contact will be nearly always online!"
-msgstr ""
-
-#: data/content/kde/index.html:47
-msgid "Are you a downloader? Use <strong>KTorrent</strong> or <strong>KGet</strong> to get new the versions of Fedora KDE Desktop Edition!"
-msgstr ""
-
-#: data/content/kde/index.html:49
-msgid "Utilities and configuration"
-msgstr ""
-
-#: data/content/kde/index.html:50
-msgid "KDE ships a terminal, of course, the gateway to the real power of any Unix/Linux machine, called Konsole. <strong>Konsole</strong> is perfectly configurable by design, as is every part of KDE. Speaking of configurable, you're of course able to configure your KDE Desktop to fit your personal needs via the <strong>System Settings</strong> GUI (Graphical User Interface). No need to know cryptic commands and configuration files. Click the options you like to change and choose the settings that make you happy. This is your desktop and we will never make these decisions for you."
-msgstr ""
-
-#: data/content/kde/index.html:52
-msgid "Office and Productivity Suite"
-msgstr ""
-
-#: data/content/kde/index.html:53
-msgid "KOffice"
-msgstr ""
-
-#: data/content/kde/index.html:54
-msgid "KOffice is an integrated office suite built on the KDE platform. It utilizes free and open standards like OpenDocument for its document formats, component communication and embedding. KOffice is free software and serves as a great and lightweight alternative to OpenOffice.org. Visit <a href=\"http://www.koffice.org\" title=\"http://www.koffice.org\">http://www.koffice.org</a> to find out more."
-msgstr ""
-
-#: data/content/kde/index.html:55 data/content/kde/index.html:121
-msgid "Kontact"
-msgstr ""
-
-#: data/content/kde/index.html:56
-msgid "<strong>Kontact</strong> is the integrated personal information manager of KDE. The Kontact suite unites mature and proven KDE PIM applications under one easy to use application."
-msgstr ""
-
-#: data/content/kde/index.html:58
-msgid "The components of KDE Kontact are tailored to work well with each other. This results in features like intuitive drag-and-drop between appointment handling, task lists and contacts. KDE Kontact also supports various groupware servers, allowing you to easily integrate your work life with your time outside of the daily grind. When using these servers your workgroup has access to features like shared email folders, group task lists, calendar sharing, central addressbooks and meeting scheduling, everything you would expect from full featured commercial applications, and much more."
-msgstr ""
-
-#: data/content/kde/index.html:67
-msgid "Multimedia"
-msgstr ""
-
-#: data/content/kde/index.html:68
-msgid "Todays world is full of multimedia all around you (whether it's music as MP3s or CDs), or streamed online, all kinds of videos (from movies to TV broadcast) and more. Usually it's not easy to play it, not to mention organizing and backing up all of it. Fedora KDE Desktop Edition has a solution for you. No more multimedia mess, just enjoy your media!"
-msgstr ""
-
-#: data/content/kde/index.html:69
-msgid "It's just a fact that <strong>Amarok</strong> defines new standards in media players industry. You've probably never had your music so organized as with Amarok. With high quality music collection features you never lose your music anymore! Amarok supports Advanced playlists, including dynamically generated ones, which would remind you of your oldest, almost forgotten songs, with cover art, lyrics and even information on the current track or band, pulled straight from Wikipedia. Amarok also brings great integration with Last.fm and other online music services, allowing you to listen to streaming radio, podcasts, and even purchase music from the Magnatune store, allowing you to support artists directly and enjoy DRM free music. Live your music!"
-msgstr ""
-
-#: data/content/kde/index.html:70
-msgid "<strong>Kaffeine</strong> is a video player and digital TV in one easy to use interface. Watch and record your favorite digital TV stations and enjoy content stored on your machine with this intuitive media player."
-msgstr ""
-
-#: data/content/kde/index.html:71
-msgid "<strong>K3B</strong> allows you to easily back up your multimedia files as it's a full featured CD/DVD writing software. K3B supports writing data CDs/DVDs, audio CDs, video CDs, DVDs, copying, CD ripping and more. Take care, you can get burned ;-)"
-msgstr ""
-
-#: data/content/kde/index.html:72
-msgid "<strong>KsCD</strong> is the small, fast Standard-Audio-CD-Player for KDE, with MusicBrainz support. KsCD means \"The KDE Project's small/simple CD player,\" and it lives up to this name, providing the features you expect in a compact, easy to use interface."
-msgstr ""
-
-#: data/content/kde/index.html:75
-msgid "<strong>Marble</strong> is a Virtual Globe and World Atlas in your computer. You can learn a lot about Earth or you can just enjoy virtual trips around our planet. You can choose from different thematic maps: a classroom-style topographic map, a satellite view, open street map, earth at night and temperature and precipitation maps. Integration with the popular Open Street Map project allows users to easily view maps of their current location without opening even opening a browser."
-msgstr ""
-
-#: data/content/kde/index.html:76
-msgid "The KDE Education package contains many and language learning tools such as <strong>Parley</strong>, <strong>Kiten</strong> and others. That's great, isn't it? Ja! Si! Ano! It is."
-msgstr ""
-
-#: data/content/kde/index.html:77
-msgid "If you're interested in chemistry, do not miss <strong>Kalzium</strong>! Did you know that the melting point of Ruthenium (Ru) is 2,610 K and that it was discovered in the year 1844 by K. Klaus? I didn't."
-msgstr ""
-
-#: data/content/kde/index.html:81
-msgid "Some people never grow up, some people like games to relax and some just to remember the golden ages of the first computer games. The KDE Games package contains collection of revamped classics such as <strong>Kapman</strong>, <strong>KBreakOut</strong>, <strong>KGoldrunner</strong>, all with a brand new look and beautiful artwork. For those who like to pass the time with Solitaire or Free Cell, there are plenty of card games to keep you busy! And of course new and entertaining games as such <strong>Kolf</strong>, a miniature golf game."
-msgstr ""
-
-#: data/content/kde/index.html:83
-msgid "Note: Not all listed applications are available on the live CD due to space reasons. After installation, you can discover many more cool KDE applications using the integrated package management suite under System Settings -> Add & Remove programs!"
-msgstr ""
-
-#: data/content/kde/index.html:96
-msgid "Mailing list:"
-msgstr ""
-
-#: data/content/kde/index.html:97
-msgid "IRC channel:"
-msgstr ""
-
-#: data/content/kde/index.html:98
-msgid "Bugzilla:"
-msgstr ""
-
-#: data/content/kde/index.html:99
-msgid "KDE UserBase:"
-msgstr ""
-
-#: data/content/kde/index.html:110 data/content/kde/index.html:120
-#: data/content/kde/index.html:130
-msgid "KDE Desktop"
-msgstr ""
-
-#: data/content/kde/index.html:112
-msgid "A screenshot of the KDE 4.0 destkop using Plasma"
-msgstr ""
-
-#: data/content/kde/index.html:122
-msgid "A screenshot of the Kontact with a few features."
-msgstr ""
-
-#: data/content/kde/index.html:132
-msgid "A few of the games available on KDE"
-msgstr ""
-
-#: data/content/lxde/index.html:10
-msgid "About Spin: LXDE"
-msgstr "Acerca de la Edición: LXDE"
-
-#: data/content/xfce/index.html:10
-msgid "About Spin: XFCE"
-msgstr "Acerca de la Edición: XFCE"
-
-#: data/content/xfce/index.html:16 data/content/xfce/index.html:30
-#, fuzzy
-msgid "About XFCE"
-msgstr "Acerca de la Edición: XFCE"
-
-#: data/content/xfce/index.html:26
-msgid "The Fedora Xfce spin showcases the Xfce desktop, which aims to be fast and lightweight, while still being visually appealing and user friendly."
-msgstr ""
-
-#: data/content/xfce/index.html:27
-msgid "Xfce is a full fledged desktop using the freedesktop.org standard."
-msgstr ""
-
-#: data/content/xfce/index.html:32
-msgid "The Fedora Xfce Spin is live cd which is also installable that showcases the Xfce Desktop Environment featuring a mix of high productivity centric applications. Xfce is a lightweight desktop environment for various *NIX systems. Designed for productivity, it loads and executes applications fast, while conserving system resources. The purpose of the Fedora Xfce Spin is to provide a high-quality Xfce experience to Fedora users and developers highlighting the benefits of the clean quick interface of the Xfce desktop that lets users get more done faster. All this built on top of Fedora innovations makes for a next generation Xfce powered desktop."
-msgstr ""
-
-#: data/content/xfce/index.html:36
-msgid "Fedora Xfce spin is live cd which is also installable that features Xfce which is a lightweight, quick and clean desktop interface that allows you to get more done faster. Designed for productivity, Xfce loads and executes applications quickly, while conserving system resources. All this built on top of Fedora innovations makes for a next generation Xfce powered desktop."
-msgstr ""
-
-#: data/content/xfce/index.html:41
-msgid "Docs:"
-msgstr ""
-
-#: data/content/xfce/index.html:43
-msgid "Xfce Documentation:"
-msgstr ""
-
-#: data/content/xfce/index.html:44
-msgid "Xfce FAQ:"
-msgstr ""
-
-#: data/content/xfce/index.html:45
-msgid "Another Xfce FAQ:"
-msgstr ""
-
-#: data/content/xfce/index.html:46
-msgid "Fedora 12 User Guide:"
-msgstr ""
-
-#: data/content/xfce/index.html:47
-msgid "Xfce chapter in the Fedora 12 User Guide:"
-msgstr ""
-
-#: data/content/xfce/index.html:49
-msgid "Mailing lists:"
-msgstr ""
-
-#: data/content/xfce/index.html:51
-msgid "Xfce Mailing list:"
-msgstr ""
-
-#: data/content/xfce/index.html:52
-#, fuzzy
-msgid "Fedora List:"
-msgstr "Ediciones de Fedora"
-
-#: data/content/xfce/index.html:54
-msgid "Forums:"
-msgstr ""
-
-#: data/content/xfce/index.html:56
-msgid "Xfce Forum:"
-msgstr ""
-
-#: data/content/xfce/index.html:57
-#, fuzzy
-msgid "Fedora Forum:"
-msgstr "Fedora"
-
-#: data/content/xfce/index.html:59
-msgid "Wikis:"
-msgstr ""
-
-#: data/content/xfce/index.html:61
-msgid "Xfce Wiki:"
-msgstr ""
-
-#: data/content/xfce/index.html:62
-#, fuzzy
-msgid "Fedora Wiki:"
-msgstr "Fedora"
-
-#: data/content/xfce/index.html:64
-msgid "IRC:"
-msgstr ""
-
-#: data/content/xfce/index.html:66
-msgid "#xfce on freenode.net"
-msgstr ""
-
-#: data/content/xfce/index.html:67
-msgid "#fedora on freenode:"
-msgstr ""
-
-#: data/content/xfce/index.html:77 data/content/xfce/index.html:87
-msgid "XFCE Desktop"
-msgstr ""
-
-#: data/content/xfce/index.html:79 data/content/xfce/index.html:89
-msgid "A screenshot of the XFCE destkop."
-msgstr ""
-
-#: data/templates/download-tab.html:7 data/templates/download-tab.html:8
-msgid "32-bit PC Edition"
-msgstr ""
-
-#: data/templates/download-tab.html:8
-msgid "This edition is for the highest compatibility; it will work on both 32-bit and 64-bit computers."
-msgstr ""
-
-#: data/templates/download-tab.html:9 data/templates/download-tab.html:15
-msgid "Download Now!"
-msgstr ""
-
-#: data/templates/download-tab.html:10 data/templates/download-tab.html:16
-msgid "6K Torrent File for 32-bit PC ISO"
-msgstr ""
-
-#: data/templates/download-tab.html:10 data/templates/download-tab.html:16
-msgid "How do I use this file?"
-msgstr ""
-
-#: data/templates/download-tab.html:13 data/templates/download-tab.html:14
-msgid "64-bit PC Edition"
-msgstr ""
-
-#: data/templates/download-tab.html:14
-msgid "Enjoy the full power and speed of a 64-bit computer. Not compatible with 32-bit computers."
-msgstr ""
-
-#: data/templates/download-tab.html:19
-msgid "Unsure if your computer is 32-bit or 64-bit?"
-msgstr ""
-
-#: data/templates/download-tab.html:21
-msgid "The 32-bit edition is compatible with both 32-bit and 64-bit PCs."
-msgstr ""
-
-#: data/templates/download-tab.html:22
-msgid "Read our <a href=\"http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-new-users.html#sn-which-arch\">documentation on how to tell if your computer is 32-bit or 64-bit</a>."
-msgstr ""
-
-#: data/templates/download-tab.html:25
-msgid "Older Downloads"
-msgstr ""
-
-#: data/templates/download-tab.html:28
-msgid "Release Name"
-msgstr ""
-
-#: data/templates/download-tab.html:29
-msgid "Size in MBs"
-msgstr ""
-
-#: data/templates/download-tab.html:36
-msgid "Older releases of this spin can be found at <a href=\"http://archive.fedoraproject.org/\">archive.fedoraproject.org</a>."
-msgstr ""
-
-#: data/templates/foot.html:9 data/templates/head.html:7
+#: data/templates/foot.html:9
 msgid "Fedora"
 msgstr "Fedora"
 
@@ -1583,6 +345,11 @@ msgstr "Fedora"
 #: data/templates/foot.html:20
 msgid "Full Download List"
 msgstr ""
+
+#: data/templates/foot.html:23
+#, fuzzy
+msgid "Support"
+msgstr "Soporte para Ediciones"
 
 #: data/templates/foot.html:24
 msgid "Get Help"
@@ -1700,68 +467,107 @@ msgstr ""
 msgid "The Fedora Project is maintained and driven by the community. This is a community maintained site. Red Hat is not responsible for content."
 msgstr "El Proyecto Fedora es mantenido y manejado por la comunidad bajo el patrocinio de <a href=\"http://www.redhat.com\">Red Hat</a>. Este es un sitio mantenido por la comunidad. Red Hat no es responsable por el contenido."
 
-#: data/templates/head.html:11
+#: data/templates/head.html:7
 #, fuzzy
-msgid "Spins Directory"
-msgstr "Ediciones de la Comunidad"
+msgid "Fedora Dorrie:"
+msgstr "Fedora"
 
-#: data/templates/sidebar.html:11
-msgid "Looking to Download Fedora?"
+#: data/templates/head.html:9
+msgid "Login"
 msgstr ""
 
-#: data/templates/sidebar.html:12
-msgid "Spins are alternate versions of Fedora for specific uses. If you'd just like to download Fedora itself, you should visit the main fedoraproject.org website."
-msgstr ""
-
-#: data/templates/sidebar.html:13
-msgid "Visit get.fedoraproject.org >"
-msgstr ""
-
-#: data/templates/sidebar.html:16
-msgid "Top Spins This Release"
-msgstr ""
-
-#: data/templates/sidebar.html:38 data/templates/sidebar.html:55
-#: data/templates/sidebar.html:60
-msgid "Learn more >"
-msgstr ""
-
-#: data/templates/sidebar.html:41
-msgid "Want to Make Your Own Spin?"
-msgstr ""
-
-#: data/templates/sidebar.html:42
-msgid "Anyone can create their very own Fedora spin."
-msgstr ""
-
-#: data/templates/sidebar.html:43
-msgid "Go to the spin creation tutorial >"
-msgstr ""
-
-#: data/templates/sidebar.html:50
-msgid "How do I use this?"
-msgstr ""
-
-#: data/templates/sidebar.html:50
-msgid "More download options ..."
-msgstr ""
-
-#: data/templates/sidebar.html:53
-msgid "What is a Spin?"
-msgstr ""
-
-#: data/templates/sidebar.html:54
-#, fuzzy
-msgid "Fedora Spins are alternate version of Fedora, tailored for various types of users via hand-picked application sets and other customizations."
-msgstr "¿Que es una edición? Las ediciones de Fedora son versiones alternativas de Fedora, adaptados para diferentes tipos de usuarios con un conjunto de aplicaciones o personalizaciones seleccionados a mano."
-
-#: data/templates/sidebar.html:58
-msgid "What is this Spin?"
-msgstr ""
-
-#: data/templates/sidebar.html:65
+#: data/templates/sidebar.html:9
 msgid "Website Language"
 msgstr ""
+
+#~ msgid "By Popularity"
+#~ msgstr "Por Popularidad"
+
+#~ msgid "Alphabetical Order"
+#~ msgstr "Orden Alfabético"
+
+#, fuzzy
+#~ msgid "Meet the Spin Community"
+#~ msgstr "Ediciones de la Comunidad"
+
+#, fuzzy
+#~ msgid "Chitlesh Goorah, Fedora Electoric Lab"
+#~ msgstr "Acerca de la Edición: Laboratorio Electrónico Fedora"
+
+#~ msgid "About Spin: AOS"
+#~ msgstr "Acerca de la Edición: AOS"
+
+#, fuzzy
+#~ msgid "About AOS"
+#~ msgstr "Acerca de la Edición: AOS"
+
+#~ msgid "About Spin: BrOffice.org"
+#~ msgstr "Acerca de la Edición: BrOffice.org"
+
+#, fuzzy
+#~ msgid "Spins Community Focus Feature"
+#~ msgstr "Ediciones de la Comunidad"
+
+#~ msgid "Spins Community"
+#~ msgstr "Ediciones de la Comunidad"
+
+#, fuzzy
+#~ msgid "Spins Creator Interview: Chitlesh Goorah, Fedora Electronic Lab"
+#~ msgstr "Acerca de la Edición: Laboratorio Electrónico Fedora"
+
+#~ msgid "About Spin: Education"
+#~ msgstr "Acerca de la Edición: Educación"
+
+#, fuzzy
+#~ msgid "About Education"
+#~ msgstr "Acerca de la Edición: Educación"
+
+#, fuzzy
+#~ msgid "Education"
+#~ msgstr "Acerca de la Edición: Educación"
+
+#~ msgid "About Spin: Fedora Electronic Lab"
+#~ msgstr "Acerca de la Edición: Laboratorio Electrónico Fedora"
+
+#, fuzzy
+#~ msgid "About FEL"
+#~ msgstr "Fedora"
+
+#~ msgid "About Spin: Games"
+#~ msgstr "Acerca de la Edición: Juegos"
+
+#~ msgid "About Spin: KDE"
+#~ msgstr "Acerca de la Edición: KDE"
+
+#, fuzzy
+#~ msgid "About KDE"
+#~ msgstr "Acerca de la Edición: KDE"
+
+#~ msgid "About Spin: LXDE"
+#~ msgstr "Acerca de la Edición: LXDE"
+
+#~ msgid "About Spin: XFCE"
+#~ msgstr "Acerca de la Edición: XFCE"
+
+#, fuzzy
+#~ msgid "About XFCE"
+#~ msgstr "Acerca de la Edición: XFCE"
+
+#, fuzzy
+#~ msgid "Fedora List:"
+#~ msgstr "Ediciones de Fedora"
+
+#, fuzzy
+#~ msgid "Fedora Wiki:"
+#~ msgstr "Fedora"
+
+#, fuzzy
+#~ msgid "Spins Directory"
+#~ msgstr "Ediciones de la Comunidad"
+
+#, fuzzy
+#~ msgid "Fedora Spins are alternate version of Fedora, tailored for various types of users via hand-picked application sets and other customizations."
+#~ msgstr "¿Que es una edición? Las ediciones de Fedora son versiones alternativas de Fedora, adaptados para diferentes tipos de usuarios con un conjunto de aplicaciones o personalizaciones seleccionados a mano."
 
 #, fuzzy
 #~ msgid "About BrOffice.org"
