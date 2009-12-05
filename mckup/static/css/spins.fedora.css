@@ -24,7 +24,6 @@ a:link, a:visited, a:active,
 #wrapper
 {
 	padding: 0;
-	width: 960px;
 }
 
 #head
@@ -104,7 +103,7 @@ a:link, a:visited, a:active,
 	float: right;
 	font-size: .95em;
 	padding-bottom: 2px;
-	width: 250px;
+	width: 18%;
 }
 #sidebar h2, #sidebar img
 {
@@ -196,7 +195,7 @@ a:link, a:visited, a:active,
 {
 	margin-left: 5px;
 	padding-left: 0px;
-	width: 680px;
+	width: 80%;
 }
 
 #content img
