@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-12-05 08:45+0530\n"
+"POT-Creation-Date: 2009-12-05 16:11+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -232,22 +232,15 @@ msgid "Infrastructure/Custom Spins"
 msgstr ""
 
 #: data/content/index.html:7
-msgid "Fedora Spins"
+msgid "Dorrie - Fedora Remix Creator"
 msgstr ""
 
 #: data/content/index.html:10
-msgid "Meet our spins."
+msgid "What exactly is Dorrie?"
 msgstr ""
 
 #: data/content/index.html:11
-msgid ""
-"What is a spin? Fedora spins are alternate version of Fedora, tailored "
-"for various types of users via hand-picked application set or "
-"customizations."
-msgstr ""
-
-#: data/content/index.html:12
-msgid "Learn more about spins >"
+msgid "Just go on and on and on and on about Dorrie"
 msgstr ""
 
 #: data/content/support.html:10 data/content/support.html:13
