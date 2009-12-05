@@ -15,18 +15,15 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from django.shortcuts import render_to_response
+from django.conf import settings
 from django.http import HttpResponse
-
-from settings import MEDIA_ROOT
+from django.shortcuts import render_to_response
 
 from forms import NameForm , BasicForm
 from helper import new_spin, add_lang_tz, select_helper, get_spin
-from parse import get_lang_tz, get_comps, default_selected, package_listing, \
-    build_ks
+from parse import (get_lang_tz, get_comps, default_selected,
+                         package_listing, build_ks)
 
-
-#Create your views here.
 
 def home(request):
     """
@@ -45,7 +42,7 @@ def basic(request):
     spin = new_spin(name, base_ks)
     defaults = get_lang_tz(base_ks)
     form = BasicForm(initial=defaults)
-    return render_to_response('basic.html', {'form': form, \
+    return render_to_response('basic.html', {'form': form,
         'spin': spin})
 
 
@@ -61,8 +58,8 @@ def packages(request):
     c = get_comps()
     groups = package_listing(c)
     categories = c.get_categories()
-    return render_to_response('packages.html', {'cats': categories, \
-        'groups': groups, 'defaults': selected, 'spin': spin, \
+    return render_to_response('packages.html', {'cats': categories,
+        'groups': groups, 'defaults': selected, 'spin': spin,
         'plus': plus, 'minus': minus})
     
 

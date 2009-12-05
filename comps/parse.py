@@ -15,25 +15,25 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import urllib
-import os
+import os, pytz, urllib
+
+#FIXME: Import only what's needed or just 'from pykickstart import parser'
+from pykickstart.parser import *
+from pykickstart.version import makeVersion
+
+from django.conf import settings
+
 from comps import Comps
 from helper import get_spin
 from hardwareLists import langDict
-import pytz
 #import rhpl.keyboard as keyboard
-
-from settings import COMPS_URL, KS_DIR, CACHE, MEDIA_ROOT
-
-from pykickstart.parser import *
-from pykickstart.version import makeVersion
 
 
 def get_comps():
     """
     parse and return comps object
     """
-    fd = urllib.urlopen(COMPS_URL)
+    fd = urllib.urlopen(settings.COMPS_URL)
     c = Comps()
     c.add(fd)
     return c
@@ -41,9 +41,9 @@ def get_comps():
 
 def ls_ks():
     """
-    List files in KS_DIR
+    List files in settings.KS_DIR
     """
-    ksts = os.listdir(KS_DIR)
+    ksts = os.listdir(settings.KS_DIR)
     choicelist = []
     for kst in ksts:
         #if kst.find('_') == -1:
@@ -72,7 +72,7 @@ def timezones():
     return tuple(choicelist)
 
 
-def kickstart(ks, path=KS_DIR):
+def kickstart(ks, path=settings.KS_DIR):
     """
     return parsed pykickstart object
     """
@@ -127,21 +127,30 @@ def kpgrp_list(object):
     return list
 
 
+def make_repo(object, name='', baseurl=''):
+    """
+    Build and return repo object
+    """
+    object.name = name
+    object.baseurl = baseurl
+    return object
+
+
 def build_ks(id):
     """
     Build Modified KS file
     """
     spin = get_spin(id)
-    folder = "%s%s_%s/" % (CACHE, spin.id, spin.name)
+    folder = "%s%s_%s/" % (settings.CACHE, spin.id, spin.name)
     
-    link = "%s/cache" % MEDIA_ROOT
+    link = "%s/cache" % settings.MEDIA_ROOT
    
     #build paths
     if not os.path.exists(folder):
         os.makedirs(folder)
 
     if not os.path.exists(link):
-        os.symlink(CACHE, link)
+        os.symlink(settings.CACHE, link)
 
     ksparser = kickstart(spin.baseks)
    
@@ -167,6 +176,16 @@ def build_ks(id):
 
     ksparser.handler.packages.packageList.extend(pplus)
     ksparser.handler.packages.excludedList.extend(pminus)
+
+    #Change rawhide repo to the local one
+    repolist = ksparser.handler.repo.repoList
+    for repo in repolist:
+        if repo.name == 'rawhide':
+            repo.name = 'local'
+            repo.baseurl = 'file://%sPackages/' % settings.REPO
+
+    #partition hack
+
     
     #write new ks file
     filename = "%s%s.ks" % (folder, spin.name)
@@ -177,8 +196,9 @@ def build_ks(id):
     linkname = "/static/cache/%s_%s/%s.ks" % \
         (spin.id, spin.name, spin.name)
 
+    #if the cache link is broken unlink and create a new symlink :-P
+    if not os.path.exists(linkname):
+        os.unlink(link)
+        os.symlink(settings.CACHE, link)
+    
     return linkname
-    
-    
-
-

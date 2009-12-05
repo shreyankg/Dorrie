@@ -15,9 +15,9 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+from django.conf import settings
 from django.conf.urls.defaults import *
-from comps.views import home, basic, packages, select, build
-from settings import MEDIA_ROOT
+from comps import views
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -31,14 +31,19 @@ urlpatterns = patterns('',
     # to INSTALLED_APPS to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
+    (r'^$', views.home),
+    (r'^basic/$', views.basic),
+    (r'^packages/$', views.packages),
+    (r'^select/$', views.select),
+    (r'^build/$', views.build),
     # Uncomment the next line to enable the admin:
     # (r'^admin/(.*)', admin.site.root),
-    (r'^static/(?P<path>.*)$',
-      'django.views.static.serve',
-      {'document_root': MEDIA_ROOT}),
-    (r'^$', home),
-    (r'^basic/$', basic),
-    (r'^packages/$', packages),
-    (r'^select/$', select),
-    (r'^build/$', build),
 )
+
+if settings.STATIC_SERVE:
+    urlpatterns += patterns('',
+        (r'^static/(?P<path>.*)$',
+         'django.views.static.serve',
+         {'document_root': settings.MEDIA_ROOT}),
+    )
+

@@ -17,8 +17,16 @@
 
 # Django settings for dorrie project.
 
+import os
+
+# The directory of the project
+APP_ROOT = os.path.dirname(os.path.abspath(__file__))
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
+
+# Serve static files from the Django development web server?
+STATIC_SERVE = True
 
 ADMINS = (
     # ('Your Name', 'your_email@domain.com'),
@@ -26,8 +34,9 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-DATABASE_ENGINE = 'mysql'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-DATABASE_NAME = 'dorrie'             # Or path to database file if using sqlite3.
+DATABASE_ENGINE = 'sqlite3'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+# DB Name is path to database file if using sqlite3.
+DATABASE_NAME = os.path.join(APP_ROOT, 'dorrie.sqlite3')             
 DATABASE_USER = ''             # Not used with sqlite3.
 DATABASE_PASSWORD = ''         # Not used with sqlite3.
 DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
@@ -50,11 +59,9 @@ SITE_ID = 1
 # to load the internationalization machinery.
 USE_I18N = True
 
-APP_ROOT = ''
-
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = '%scomps/media/' % APP_ROOT
+MEDIA_ROOT = os.path.join(APP_ROOT, 'comps/media')
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
@@ -101,4 +108,7 @@ COMPS_URL = \
 
 KS_DIR = '/usr/share/spin-kickstarts/'
 
+# cache to store the built KS files and spins (Read 'lots of GBs')
 CACHE = ''
+# Local fedora repository to the folder that contains Packages
+REPO = ''

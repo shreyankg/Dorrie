@@ -17,23 +17,11 @@
 
 from django.db import models
 
-# Create your models here.
 
 class Spin(models.Model):
-    """Class for the releases
-
-    Table details:
-    name: Name of the spin.
-    language:
-    timezone:
-    rootpwd:
-    baseks: base kickstart file
-    groups_plus: added groups
-    groups_minus: removed groups
-    packages_plus: added packages
-    packages_minus: removed packages
-    """
-    name = models.TextField()
+    """Class for the releases"""
+    name = models.TextField(
+        help_text="The name of the spin.")
     language = models.TextField()
     timezone = models.TextField()
     rootpwd = models.TextField()
@@ -45,18 +33,10 @@ class Spin(models.Model):
 
 
 class Group(models.Model):
-    """Package Groups
-
-    Table details:
-    name: 
-    """
-    name = models.TextField()
+    """Package Groups"""
+    name = models.TextField(help_text="The name of the package group.")
 
 
 class Package(models.Model):
-    """Package
-
-    Table details:
-    name: 
-    """
-    name = models.TextField()
+    """A Package."""
+    name = models.TextField(help_text="The name of the package.")

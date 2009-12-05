@@ -16,9 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from django import forms
-
 from parse import ls_ks, languages, timezones
-
 
 class NameForm(forms.Form):
     """

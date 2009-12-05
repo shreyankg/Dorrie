@@ -1,42 +1,60 @@
+
+======================================
+ Installation instructions for Dorrie
+======================================
+
+
 Required packages:
-======================
-Django
-mysql
-mysql-admin
-MySQL-python
-spin-kickstarts
-pytz
+==================
+
+- Django
+- spin-kickstarts
+- pytz
+- sqlite
+- python-sqlite2
+- yum
+
+If you're choosing MySQL, replace the sqlite dependencies with the MySQL ones:
+
+- mysql
+- mysql-server
+- mysql-admin
+- MySQL-python
+
 
 How to Install:
 ===============
-* edit settings.py *
 
-1. Create proper user in mysql and enter the mysql username and password in
-settings.py.
+1. For SQLite you should be set with the default settings (only the
+   ``DATABASE_NAME`` should be needed). For mysql define the mysql username and
+   password in ``settings.py``::
 
-DATABASE_USER = 'myuser'             
-DATABASE_PASSWORD = 'passwd123'         
-DATABASE_HOST = ''             
-DATABASE_PORT = ''     
+    DATABASE_USER = 'username'
+    DATABASE_PASSWORD = 'password'
+    DATABASE_HOST = ''
+    DATABASE_PORT = ''
 
 Leave the host and port empty id the database is at the same mechine as the
 application.
 
-2. Set APP_ROOT to the path where the application is installed.
+2. Set ``APP_ROOT`` to the path where the application is installed::
 
-APP_ROOT = '/path/to/dorrie/'
+    APP_ROOT = '/path/to/dorrie/'
 
-3. Set CACHE to a directory writable by the user running the application.
+3. Set ``CACHE`` to a directory writable by the user running the application.
 
-4. $python manage.py syncdb
+4. Create the required table structure in the database::
 
-This will create the required table structure in the database.
+    $ python manage.py syncdb
 
-* To run it as local instance
-   $python manage.py runserver ip:port
+How to run Dorrie
+=================
 
-   Give required ip and port
+To run it as local instance, execute something like the following::
 
-* To run this project under Apache feel free to read
-http://www.djangobook.com/en/1.0/chapter20/ :)
+    $ python manage.py runserver 0.0.0.0:8000
+
+To run this project under Apache, refer to the `Django Deployment Documentation`_.
+
+.. _Django Deployment Documentation: http://www.djangobook.com/en/1.0/chapter20/
 
