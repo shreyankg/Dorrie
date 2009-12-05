@@ -4,6 +4,8 @@ Django
 mysql
 mysql-admin
 MySQL-python
+mysql-server
+system-config-language
 spin-kickstarts
 pytz
 
