@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-12-04 22:46+0530\n"
+"POT-Creation-Date: 2009-12-05 17:01+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "About Fedora Spins"
 msgstr ""
 
-#: data/content/about.html:13 data/templates/head.html:10
+#: data/content/about.html:13
 msgid "About Spins"
 msgstr ""
 
@@ -232,22 +232,15 @@ msgid "Infrastructure/Custom Spins"
 msgstr ""
 
 #: data/content/index.html:7
-msgid "Fedora Spins"
+msgid "Dorrie - Fedora Remix Creator"
 msgstr ""
 
 #: data/content/index.html:10
-msgid "Meet our spins."
+msgid "What exactly is Dorrie?"
 msgstr ""
 
 #: data/content/index.html:11
-msgid ""
-"What is a spin? Fedora spins are alternate version of Fedora, tailored "
-"for various types of users via hand-picked application set or "
-"customizations."
-msgstr ""
-
-#: data/content/index.html:12
-msgid "Learn more about spins >"
+msgid "Just go on and on and on and on about Dorrie"
 msgstr ""
 
 #: data/content/support.html:10 data/content/support.html:13
@@ -612,6 +605,10 @@ msgstr ""
 
 #: data/templates/head.html:9
 msgid "Login"
+msgstr ""
+
+#: data/templates/head.html:10
+msgid "About Dorrie"
 msgstr ""
 
 #: data/templates/sidebar.html:9
