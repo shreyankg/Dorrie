@@ -76,27 +76,14 @@ a:link, a:visited, a:active,
 }
 
 #head-about a {
-	background:transparent url(/static/images/spins-about-icon.png) no-repeat scroll left center;
+	background:transparent url(/static/images/about-icon.png) no-repeat scroll left center;
 }
 
 #head-login a {
-	background:transparent url(/static/images/spins-directory-icon.png) no-repeat scroll left center;
+	background:transparent url(/static/images/login-icon.png) no-repeat scroll left center;
 }
-
-#head-support a {
-	background:transparent url(/static/images/spins-support-icon.png) no-repeat scroll left center;
-}
-
 
 /* end: header */
-
-/* tagline */
-#spins-tagline
-{
-	margin-left: 0px;
-}
-/* end: tagline */
-
 
 /* sidebar */
 #sidebar
@@ -167,28 +154,6 @@ a:link, a:visited, a:active,
   background-color: #295596;
 }
 
-#top-spins table
-{
-	border-collapse: collapse;
-	color: #666;
-}
-
-#top-spins table tr
-{
-	border-top: 1px solid #e6e6e6;
-	border-bottom: 1px solid #e6e6e6;
-}
-
-#top-spins table td
-{
-	padding: 3px;
-}
-
-#top-spins a
-{
-	text-decoration: none;
-}
-
 /* end: sidebar */
 
 /* content */
@@ -228,45 +193,6 @@ div.panes span#opt1 { float: left; }
 div.panes span#opt2 { float: right; }
 
 /* end: content */
-
-/* spins tables */
-
-#popular-spins table td,
-#alpha-spins table td
-{
-  padding: .8em;
-  border: 0px solid white !important;
-  border-bottom: 18px solid white !important;
-  vertical-align: top;
-}
-
-#popular-spins td.rank,
-#alpha-spins td.rank
-{
-  background-color: white;
-  text-align: left;
-  padding-left: 0px;
-  padding-right: 7px;
-  font-weight: bold;
-}
-
-#popular-spins td.name,
-#alpha-spins td.name
-{
-  font-size: xx-small;
-  font-style: italic;
-}
-
-#popular-spins td.name a,
-#alpha-spins td.name a
-{
-  font-weight: bold;
-  font-size: medium;
-  font-style: normal;
-}
-
-/* end: spins tables */
-
 
 /* footer */
 body
