@@ -177,20 +177,27 @@ def build_ks(id):
     ksparser.handler.packages.packageList.extend(pplus)
     ksparser.handler.packages.excludedList.extend(pminus)
 
-    #Change rawhide repo to the local one
+    #Change mirrorlist repo to the local one
     repolist = ksparser.handler.repo.repoList
+    released = os.path.join(settings.REPO, 'fedora/Packages/')
+    updates = os.path.join(settings.REPO, 'updates/')
     for repo in repolist:
-        if repo.name == 'rawhide':
-            repo.name = 'local'
-            repo.baseurl = 'file://%sPackages/' % settings.REPO
+        if repo.name == 'released':
+            repo.baseurl = 'file://%s' % released
+        elif repo.name == 'updates':
+            repo.baseurl = 'file://%s' % updates
 
-    #partition hack
-
-    
     #write new ks file
     filename = "%s%s.ks" % (folder, spin.name)
     fd = open(filename, 'w')
-    fd.write(ksparser.handler.__str__())
+    lines = ksparser.handler.__str__().splitlines(True)
+    for line in lines:
+        if line.startswith('%include'): #include baseks hack
+            continue
+        if line.startswith('part / ') and \
+            lines[lines.index(line)+1].startswith('part / '): #partition hack
+                continue
+        fd.write(line)
     fd.close()
 
     linkname = "/static/cache/%s_%s/%s.ks" % \
