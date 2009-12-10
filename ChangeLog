@@ -1,5 +1,9 @@
 2009-12-10 Shreyank Gupta <sgupta@redhat.com>
 
+	* dorrie/ : Moved the Django project to dorrie folder
+
+2009-12-10 Shreyank Gupta <sgupta@redhat.com>
+
     * comps/parse.py (build_ks): Repo, Include and Part hacks.
 
 2009-12-5 Dimitris Glezos <mits@cat.ix>

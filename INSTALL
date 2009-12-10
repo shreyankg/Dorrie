@@ -25,6 +25,10 @@ If you're choosing MySQL, replace the sqlite dependencies with the MySQL ones:
 How to Install:
 ===============
 
+0. Change to dorrie directory::
+
+    $ cd dorrie
+
 1. For SQLite you should be set with the default settings (only the
    ``DATABASE_NAME`` should be needed). For mysql define the mysql username and
    password in ``settings.py``::
