@@ -1,3 +1,8 @@
+2009-12-17 Hiemanshu Sharma <hiemanshu@fedoraproject.org>
+	* base.html - Moved to new Template
+	* dorrie.jpg - Updated with new logo send by Shreyank
+	* dorrie.fedora.css - Added new css file to leave fedora.css untouched
+
 2009-12-10 Shreyank Gupta <sgupta@redhat.com>
 
 	* dorrie/ : Moved the Django project to dorrie folder
@@ -32,7 +37,7 @@ Shreyank Gupta <sgupta@redhat.com>
     * comps/parse.py (make_repo): New method.
 	  (build_ks): Change rawhide repo to the local, fix symlink
 
-Hiemanshu <hiemanshu@fix.ny.email>
+Hiemanshu <hiemanshu@fedoraproject.org>
 	
 	* mckup/* : Mockup for new look.
 
