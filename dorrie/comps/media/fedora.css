@@ -56,15 +56,15 @@ pre
 
 #packages
 {
-  width: 40%;
+  width: 50%;
   float: right;
 }
 
 #package-list
 {
-    width: 70%;
+    width: 100%;
     height: 300px;
-    border: 2px solid #bbb;
+    border: 1px solid #bbb;
     overflow: auto;
 }
 

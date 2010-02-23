@@ -22,7 +22,7 @@ from django.shortcuts import render_to_response
 from forms import NameForm , BasicForm
 from helper import new_spin, add_lang_tz, select_helper, get_spin
 from parse import (get_lang_tz, get_comps, default_selected,
-                         package_listing, build_ks)
+     package_listing, build_ks, livecd_create, get_tail)
 
 
 def home(request):
@@ -84,3 +84,22 @@ def build(request):
     spin = get_spin(spin_id)
     return render_to_response('build.html', {'ks': new_ks, 'spin': spin})
     
+
+def process(request):
+    """
+    start livecd-creator as a separate process
+    """
+    spin_id = request.POST.get('spin_id')
+    pid = livecd_create(spin_id)
+    html = "Process %s started.." % pid
+    return HttpResponse(html)
+
+
+def tail(request):
+    """
+    Return tail of the log
+    """
+    spin_id = request.POST.get('spin_id')
+    html = get_tail(spin_id)
+    return HttpResponse(html)
+

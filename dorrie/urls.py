@@ -36,6 +36,8 @@ urlpatterns = patterns('',
     (r'^packages/$', views.packages),
     (r'^select/$', views.select),
     (r'^build/$', views.build),
+    (r'^process/$', views.process),
+    (r'^tail/$', views.tail),
     # Uncomment the next line to enable the admin:
     # (r'^admin/(.*)', admin.site.root),
 )

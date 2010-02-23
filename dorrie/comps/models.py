@@ -30,6 +30,7 @@ class Spin(models.Model):
     gminus = models.ManyToManyField('Group', related_name='gminus_set')
     pplus = models.ManyToManyField('Package', related_name='pplus_set')
     pminus = models.ManyToManyField('Package', related_name='pminus_set')
+    pid = models.IntegerField(default=0)
 
 
 class Group(models.Model):

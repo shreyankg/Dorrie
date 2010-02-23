@@ -1,4 +1,21 @@
+2010-02-23 Shreyank Gupta <sgupta@redhat.com>
+	
+	* dorrie/comps/media/fedora.css (#packages, #package-list): Width, border.
+
+	* dorrie/comps/models.py (Spin): Added attribute pid.
+
+	* dorrie/comps/parse.py (livecd_comand, livecd_create, get_tail): New
+	functions. 
+
+	* dorrie/comps/templates/build.html: Added JS Block, new div and build
+	spin link.
+
+	* dorrie/comps/views.py (process, tail): New views.
+
+	* dorrie/urls.py: URLs for new views.
+
 2009-12-17 Hiemanshu Sharma <hiemanshu@fedoraproject.org>
+
 	* base.html - Moved to new Template
 	* dorrie.jpg - Updated with new logo send by Shreyank
 	* dorrie.fedora.css - Added new css file to leave fedora.css untouched

@@ -17,6 +17,8 @@
 
 import os, pytz, urllib
 
+from subprocess import Popen
+
 #FIXME: Import only what's needed or just 'from pykickstart import parser'
 from pykickstart.parser import *
 from pykickstart.version import makeVersion
@@ -209,3 +211,55 @@ def build_ks(id):
         os.symlink(settings.CACHE, link)
     
     return linkname
+
+
+def livecd_command(spin):
+    """
+    Build livecd-creator command
+    """
+    ks_path = "%s%s_%s/%s.ks" % (settings.CACHE, spin.id, spin.name, spin.name)
+    fs_label = spin.name
+    folder = "%s%s_%s" % (settings.CACHE, spin.id, spin.name)
+    cache_path = os.path.join(settings.CACHE, 'cache/')
+    tmp_path = os.path.join(settings.CACHE, 'tmp/')
+    cmd = "cd %s;sudo livecd-creator -c %s --cache='%s' -t '%s' -f %s" \
+        % (folder, ks_path, cache_path, tmp_path, fs_label)
+    return cmd
+
+
+def livecd_create(id):
+    """
+    Build livecd + give progress
+    """
+    spin = get_spin(id)
+    cmd = livecd_command(spin)
+    log_file = "%s%s_%s/%s.log" % \
+        (settings.CACHE, spin.id, spin.name, spin.name)
+    fd = open(log_file, 'w')
+    process = Popen(cmd, shell=True, stdout=fd, stderr=fd)
+    spin.pid = process.pid
+    spin.save()
+    return process.pid
+
+ 
+def get_tail(id):
+    """
+    return tail or log file
+    """
+    spin = get_spin(id)
+    spin_path = "%s%s_%s/%s.iso" % (settings.CACHE, spin.id, spin.name, 
+        spin.name)
+    if os.path.exists(spin_path):
+        linkname = "/static/cache/%s_%s/%s.iso" % \
+            (spin.id, spin.name, spin.name)
+        lines = "<h3><a href='%s'>Download Spin</a></h3>" % linkname
+    else:
+        log_file = "%s%s_%s/%s.log" % \
+            (settings.CACHE, spin.id, spin.name, spin.name)
+        fd = open(log_file, 'r')
+        lines = fd.readlines()[-10:]
+        fd.close()
+        lines = "<br>".join(lines)
+    return lines
+
+

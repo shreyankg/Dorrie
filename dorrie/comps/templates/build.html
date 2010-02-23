@@ -20,9 +20,36 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Image : {{ spin.name }}</h1>
-<h3>Download Kickstart</h3>
 
-<a href="{{ ks }}">{{ spin.name }}.ks</a>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#packages").hide();
+});
+
+function build(id) {
+    $.post("/process/", { spin_id: id });
+    $('#packages').slideDown("normal");
+    setInterval(show_log, 3000); 
+}
+
+var show_log = function() {
+    $.post("/tail/", { spin_id: {{ spin.id }} }, 
+     function(data) {
+       $("#package-list").html(data); 
+     }
+    );
+}
+
+</script>
+
+<h1>Image : {{ spin.name }}</h1>
+<h3><a href="{{ ks }}">Download Kickstart</a></h3>
+
+<h3><a href="javascript:build({{ spin.id }})">Build Spin</a></h3>
+
+    <div id="packages">
+    <h3>Building spin {{ spin.name }}</h3>
+    <div id="package-list"></div>
+    </div>
 
 {% endblock %}
