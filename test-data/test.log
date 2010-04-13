@@ -1,0 +1,651 @@
+mke2fs 1.41.9 (22-Aug-2009)
+Filesystem label=test
+OS type: Linux
+Block size=4096 (log=2)
+Fragment size=4096 (log=2)
+196608 inodes, 786432 blocks
+7864 blocks (1.00%) reserved for the super user
+First data block=0
+Maximum filesystem blocks=805306368
+24 block groups
+32768 blocks per group, 32768 fragments per group
+8192 inodes per group
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912
+
+Writing inode tables:  0/24 1/24 2/24 3/24 4/24 5/24 6/24 7/24 8/24 9/2410/2411/2412/2413/2414/2415/2416/2417/2418/2419/2420/2421/2422/2423/24done                            
+Creating journal (16384 blocks): done
+Writing superblocks and filesystem accounting information: done
+
+This filesystem will be automatically checked every 28 mounts or
+180 days, whichever comes first.  Use tune2fs -c or -i to override.
+tune2fs 1.41.9 (22-Aug-2009)
+Setting maximal mount count to -1
+Setting interval between checks to 0 seconds
+warning: setup-2.8.9-1.fc12.noarch: Header V3 RSA/SHA256 signature: NOKEY, key ID 57bbccba
+Retrieving file:///dump/repo/fedora/Packages/repodata/repomd.xml ...OK
+Retrieving file:///dump/repo/updates/repodata/repomd.xml ...OK
+  Installing: setup                        ##################### [  1/463] 
+  Installing: filesystem                   ##################### [  2/463] 
+  Installing: basesystem                   ##################### [  3/463] 
+  Installing: comps-extras                 ##################### [  4/463] 
+  Installing: ncurses-base                 ##################### [  5/463] 
+  Installing: ca-certificates              ##################### [  6/463] 
+  Installing: kernel-firmware              ##################### [  7/463] 
+  Installing: tzdata                       ##################### [  8/463] 
+  Installing: mobile-broadband-provider-in ##################### [  9/463] 
+  Installing: control-center-filesystem    ##################### [ 10/463] 
+  Installing: fedora-release               ##################### [ 11/463] 
+  Installing: libX11-common                ##################### [ 12/463] 
+  Installing: xml-common                   ##################### [ 13/463] 
+  Installing: man-pages                    ##################### [ 14/463] 
+  Installing: mailcap                      ##################### [ 15/463] 
+  Installing: words                        ##################### [ 16/463] 
+  Installing: rootfiles                    ##################### [ 17/463] 
+  Installing: libgcc                       ##################### [ 18/463] 
+  Installing: nss-softokn-freebl           ##################### [ 19/463] 
+  Installing: glibc                        ##################### [ 20/463] 
+  Installing: zlib                         ##################### [ 21/463] 
+  Installing: ncurses-libs                 ##################### [ 22/463] 
+  Installing: bash                         ##################### [ 23/463] 
+  Installing: info                         ##################### [ 24/463] 
+  Installing: freetype                     ##################### [ 25/463] 
+  Installing: libsepol                     ##################### [ 26/463] 
+  Installing: libselinux                   ##################### [ 27/463] 
+  Installing: glib2                        ##################### [ 28/463] 
+  Installing: libcom_err                   ##################### [ 29/463] 
+  Installing: readline                     ##################### [ 30/463] 
+  Installing: popt                         ##################### [ 31/463] 
+  Installing: chkconfig                    ##################### [ 32/463] 
+  Installing: atk                          ##################### [ 33/463] 
+  Installing: libxml2                      ##################### [ 34/463] 
+  Installing: libstdc++                    ##################### [ 35/463] 
+  Installing: audit-libs                   ##################### [ 36/463] 
+  Installing: shadow-utils                 ##################### [ 37/463] 
+  Installing: device-mapper-libs           ##################### [ 38/463] 
+  Installing: nspr                         ##################### [ 39/463] 
+  Installing: db4                          ##################### [ 40/463] 
+  Installing: bzip2-libs                   ##################### [ 41/463] 
+  Installing: libuuid                      ##################### [ 42/463] 
+  Installing: libblkid                     ##################### [ 43/463] 
+  Installing: sed                          ##################### [ 44/463] 
+  Installing: tcp_wrappers-libs            ##################### [ 45/463] 
+  Installing: gawk                         ##################### [ 46/463] 
+  Installing: libgpg-error                 ##################### [ 47/463] 
+  Installing: libgcrypt                    ##################### [ 48/463] 
+  Installing: nss-util                     ##################### [ 49/463] 
+  Installing: e2fsprogs-libs               ##################### [ 50/463] 
+  Installing: xz-libs                      ##################### [ 51/463] 
+  Installing: device-mapper                ##################### [ 52/463] 
+  Installing: libnl                        ##################### [ 53/463] 
+  Installing: libcap-ng                    ##################### [ 54/463] 
+  Installing: libICE                       ##################### [ 55/463] 
+  Installing: expat                        ##################### [ 56/463] 
+  Installing: elfutils-libelf              ##################### [ 57/463] 
+  Installing: libSM                        ##################### [ 58/463] 
+  Installing: cyrus-sasl-lib               ##################### [ 59/463] 
+  Installing: device-mapper-event-libs     ##################### [ 60/463] 
+  Installing: libusb                       ##################### [ 61/463] 
+  Installing: libidn                       ##################### [ 62/463] 
+  Installing: file-libs                    ##################### [ 63/463] 
+  Installing: libpng                       ##################### [ 64/463] 
+  Installing: libattr                      ##################### [ 65/463] 
+  Installing: libcap                       ##################### [ 66/463] 
+  Installing: libacl                       ##################### [ 67/463] 
+  Installing: libogg                       ##################### [ 68/463] 
+  Installing: bzip2                        ##################### [ 69/463] 
+  Installing: iptables                     ##################### [ 70/463] 
+  Installing: sqlite                       ##################### [ 71/463] 
+  Installing: nss-softokn                  ##################### [ 72/463] 
+  Installing: nss                          ##################### [ 73/463] 
+  Installing: findutils                    ##################### [ 74/463] 
+  Installing: libjpeg                      ##################### [ 75/463] 
+  Installing: glibc-common                 ##################### [ 76/463] 
+  Installing: pciutils-libs                ##################### [ 77/463] 
+  Installing: libvorbis                    ##################### [ 78/463] 
+  Installing: parted                       ##################### [ 79/463] 
+  Installing: lua                          ##################### [ 80/463] 
+  Installing: libxfce4util                 ##################### [ 81/463] 
+  Installing: psmisc                       ##################### [ 82/463] 
+  Installing: which                        ##################### [ 83/463] 
+  Installing: procps                       ##################### [ 84/463] 
+  Installing: keyutils-libs                ##################### [ 85/463] 
+  Installing: krb5-libs                    ##################### [ 86/463] 
+  Installing: libgssglue                   ##################### [ 87/463] 
+  Installing: pkgconfig                    ##################### [ 88/463] 
+  Installing: pth                          ##################### [ 89/463] 
+  Installing: libraw1394                   ##################### [ 90/463] 
+  Installing: libtirpc                     ##################### [ 91/463] 
+  Installing: libtiff                      ##################### [ 92/463] 
+  Installing: tar                          ##################### [ 93/463] 
+  Installing: device-mapper-event          ##################### [ 94/463] 
+  Installing: cryptsetup-luks-libs         ##################### [ 95/463] 
+  Installing: cryptsetup-luks              ##################### [ 96/463] 
+  Installing: libksba                      ##################### [ 97/463] 
+  Installing: grubby                       ##################### [ 98/463] 
+  Installing: kpartx                       ##################### [ 99/463] 
+  Installing: upstart                      ##################### [100/463] 
+  Installing: hunspell                     ##################### [101/463] 
+  Installing: pcre                         ##################### [102/463] 
+  Installing: grep                         ##################### [103/463] 
+  Installing: less                         ##################### [104/463] 
+  Installing: libss                        ##################### [105/463] 
+  Installing: e2fsprogs                    ##################### [106/463] 
+  Installing: checkpolicy                  ##################### [107/463] 
+  Installing: cpio                         ##################### [108/463] 
+  Installing: libtdb                       ##################### [109/463] 
+  Installing: libedit                      ##################### [110/463] 
+  Installing: gdbm                         ##################### [111/463] 
+  Installing: libffi                       ##################### [112/463] 
+  Installing: dmidecode                    ##################### [113/463] 
+  Installing: libudev                      ##################### [114/463] 
+  Installing: libgudev1                    ##################### [115/463] 
+  Installing: libtool-ltdl                 ##################### [116/463] 
+  Installing: libdaemon                    ##################### [117/463] 
+  Installing: libpcap                      ##################### [118/463] 
+  Installing: libart_lgpl                  ##################### [119/463] 
+  Installing: sysvinit-tools               ##################### [120/463] 
+  Installing: avahi-autoipd                ##################### [121/463] 
+  Installing: gobject-introspection        ##################### [122/463] 
+  Installing: enchant                      ##################### [123/463] 
+  Installing: libiec61883                  ##################### [124/463] 
+  Installing: libavc1394                   ##################### [125/463] 
+  Installing: libfreebob                   ##################### [126/463] 
+  Installing: gstreamer-tools              ##################### [127/463] 
+  Installing: gstreamer                    ##################### [128/463] 
+  Installing: mailx                        ##################### [129/463] 
+  Installing: radeontool                   ##################### [130/463] 
+  Installing: MAKEDEV                      ##################### [131/463] 
+  Installing: jasper-libs                  ##################### [132/463] 
+  Installing: iptables-ipv6                ##################### [133/463] 
+  Installing: flac                         ##################### [134/463] 
+  Installing: vim-minimal                  ##################### [135/463] 
+  Installing: acl                          ##################### [136/463] 
+  Installing: pinentry                     ##################### [137/463] 
+  Installing: ntpdate                      ##################### [138/463] 
+  Installing: plymouth-libs                ##################### [139/463] 
+  Installing: file                         ##################### [140/463] 
+  Installing: iputils                      ##################### [141/463] 
+  Installing: lvm2-libs                    ##################### [142/463] 
+  Installing: iw                           ##################### [143/463] 
+  Installing: xz                           ##################### [144/463] 
+  Installing: xz-lzma-compat               ##################### [145/463] 
+  Installing: rmt                          ##################### [146/463] 
+  Installing: libxslt                      ##################### [147/463] 
+  Installing: tcp_wrappers                 ##################### [148/463] 
+  Installing: db4-utils                    ##################### [149/463] 
+  Installing: gmp                          ##################### [150/463] 
+  Installing: libconfig                    ##################### [151/463] 
+  Installing: net-tools                    ##################### [152/463] 
+  Installing: isomd5sum                    ##################### [153/463] 
+  Installing: desktop-file-utils           ##################### [154/463] 
+  Installing: libIDL                       ##################### [155/463] 
+  Installing: ORBit2                       ##################### [156/463] 
+  Installing: libselinux-utils             ##################### [157/463] 
+  Installing: binutils                     ##################### [158/463] 
+  Installing: m4                           ##################### [159/463] 
+  Installing: mtools                       ##################### [160/463] 
+  Installing: make                         ##################### [161/463] 
+  Installing: diffutils                    ##################### [162/463] 
+  Installing: gamin                        ##################### [163/463] 
+  Installing: procmail                     ##################### [164/463] 
+  Installing: ncurses                      ##################### [165/463] 
+  Installing: squashfs-tools               ##################### [166/463] 
+  Installing: libasyncns                   ##################### [167/463] 
+  Installing: hdparm                       ##################### [168/463] 
+  Installing: slang                        ##################### [169/463] 
+  Installing: newt                         ##################### [170/463] 
+  Installing: mingetty                     ##################### [171/463] 
+  Installing: dosfstools                   ##################### [172/463] 
+  Installing: libusb1                      ##################### [173/463] 
+  Installing: libx86                       ##################### [174/463] 
+  Installing: libaio                       ##################### [175/463] 
+  Installing: device-mapper-multipath-libs ##################### [176/463] 
+  Installing: libXau                       ##################### [177/463] 
+  Installing: libxcb                       ##################### [178/463] 
+  Installing: libX11                       ##################### [179/463] 
+  Installing: libXext                      ##################### [180/463] 
+  Installing: libXrender                   ##################### [181/463] 
+  Installing: libXfixes                    ##################### [182/463] 
+  Installing: libXcomposite                ##################### [183/463] 
+  Installing: libXcursor                   ##################### [184/463] 
+  Installing: libXdamage                   ##################### [185/463] 
+  Installing: libXrandr                    ##################### [186/463] 
+  Installing: libXi                        ##################### [187/463] 
+  Installing: libXinerama                  ##################### [188/463] 
+  Installing: libXtst                      ##################### [189/463] 
+  Installing: xcb-util                     ##################### [190/463] 
+  Installing: startup-notification         ##################### [191/463] 
+  Installing: libevent                     ##################### [192/463] 
+  Installing: libnfnetlink                 ##################### [193/463] 
+  Installing: libnetfilter_conntrack       ##################### [194/463] 
+  Installing: makebootfat                  ##################### [195/463] 
+  Installing: sgpio                        ##################### [196/463] 
+  Installing: libtasn1                     ##################### [197/463] 
+  Installing: gnutls                       ##################### [198/463] 
+  Installing: ethtool                      ##################### [199/463] 
+  Installing: dash                         ##################### [200/463] 
+  Installing: hesiod                       ##################### [201/463] 
+  Installing: ustr                         ##################### [202/463] 
+  Installing: libsemanage                  ##################### [203/463] 
+  Installing: pixman                       ##################### [204/463] 
+  Installing: linux-atm-libs               ##################### [205/463] 
+  Installing: iproute                      ##################### [206/463] 
+  Installing: libthai                      ##################### [207/463] 
+  Installing: lftp                         ##################### [208/463] 
+  Installing: ntfsprogs                    ##################### [209/463] 
+  Installing: iptstate                     ##################### [210/463] 
+  Installing: device-mapper-multipath      ##################### [211/463] 
+  Installing: ntsysv                       ##################### [212/463] 
+  Installing: nss_db                       ##################### [213/463] 
+  Installing: dump                         ##################### [214/463] 
+  Installing: mlocate                      ##################### [215/463] 
+  Installing: tmpwatch                     ##################### [216/463] 
+  Installing: efibootmgr                   ##################### [217/463] 
+  Installing: rsync                        ##################### [218/463] 
+  Installing: attr                         ##################### [219/463] 
+  Installing: jwhois                       ##################### [220/463] 
+  Installing: cyrus-sasl-plain             ##################### [221/463] 
+  Installing: irqbalance                   ##################### [222/463] 
+  Installing: acpid                        ##################### [223/463] 
+  Installing: cpuspeed                     ##################### [224/463] 
+  Installing: ftp                          ##################### [225/463] 
+  Installing: bc                           ##################### [226/463] 
+  Installing: nc                           ##################### [227/463] 
+  Installing: lsof                         ##################### [228/463] 
+  Installing: nano                         ##################### [229/463] 
+  Installing: ed                           ##################### [230/463] 
+  Installing: time                         ##################### [231/463] 
+  Installing: unzip                        ##################### [232/463] 
+  Installing: mtr                          ##################### [233/463] 
+  Installing: telnet                       ##################### [234/463] 
+  Installing: talk                         ##################### [235/463] 
+  Installing: dos2unix                     ##################### [236/463] 
+  Installing: vconfig                      ##################### [237/463] 
+  Installing: eject                        ##################### [238/463] 
+  Installing: traceroute                   ##################### [239/463] 
+  Installing: ntfs-3g                      ##################### [240/463] 
+  Installing: tree                         ##################### [241/463] 
+  Installing: rdist                        ##################### [242/463] 
+  Installing: setserial                    ##################### [243/463] 
+  Installing: unix2dos                     ##################### [244/463] 
+  Installing: zip                          ##################### [245/463] 
+  Installing: finger                       ##################### [246/463] 
+  Installing: rdate                        ##################### [247/463] 
+  Installing: rsh                          ##################### [248/463] 
+  Installing: pam_smb                      ##################### [249/463] 
+  Installing: symlinks                     ##################### [250/463] 
+  Installing: crontabs                     ##################### [251/463] 
+  Installing: hunspell-en                  ##################### [252/463] 
+  Installing: perf                         ##################### [253/463] 
+  Installing: perl-version                 ##################### [254/463] 
+  Installing: dbus-libs                    ##################### [255/463] 
+  Installing: dbus-glib                    ##################### [256/463] 
+  Installing: dbus                         ##################### [257/463] 
+  Installing: cracklib                     ##################### [258/463] 
+  Installing: fipscheck-lib                ##################### [259/463] 
+  Installing: gzip                         ##################### [260/463] 
+  Installing: dmraid                       ##################### [261/463] 
+  Installing: NetworkManager-glib          ##################### [262/463] 
+  Installing: dbus-x11                     ##################### [263/463] 
+  Installing: xfconf                       ##################### [264/463] 
+  Installing: hal-libs                     ##################### [265/463] 
+  Installing: eggdbus                      ##################### [266/463] 
+  Installing: ModemManager                 ##################### [267/463] 
+  Installing: dmraid-events                ##################### [268/463] 
+  Installing: cracklib-dicts               ##################### [269/463] 
+  Installing: perl-Module-Pluggable        ##################### [270/463] 
+  Installing: hal-info                     ##################### [271/463] 
+  Installing: python-libs                  ##################### [272/463] 
+  Installing: coreutils                    ##################### [273/463] 
+  Installing: pam                          ##################### [274/463] 
+  Installing: fontconfig                   ##################### [275/463] 
+  Installing: cairo                        ##################### [276/463] 
+  Installing: openssl                      ##################### [277/463] 
+  Installing: python                       ##################### [278/463] 
+  Installing: util-linux-ng                ##################### [279/463] 
+  Installing: openldap                     ##################### [280/463] 
+  Installing: module-init-tools            ##################### [281/463] 
+  Installing: newt-python                  ##################### [282/463] 
+  Installing: dbus-python                  ##################### [283/463] 
+  Installing: nash                         ##################### [284/463] 
+  Installing: libuser                      ##################### [285/463] 
+  Installing: libuser-python               ##################### [286/463] 
+  Installing: libxml2-python               ##################### [287/463] 
+  Installing: libselinux-python            ##################### [288/463] 
+  Installing: alsa-lib                     ##################### [289/463] 
+  Installing: logrotate                    ##################### [290/463] 
+  Installing: rsyslog                      ##################### [291/463] 
+  Installing: libbdevid-python             ##################### [292/463] 
+  Installing: authconfig                   ##################### [293/463] 
+  Installing: lvm2                         ##################### [294/463] 
+  Installing: yum-metadata-parser          ##################### [295/463] 
+  Installing: python-ethtool               ##################### [296/463] 
+  Installing: libssh2                      ##################### [297/463] 
+  Installing: libcurl                      ##################### [298/463] 
+  Installing: rpcbind                      ##################### [299/463] 
+  Installing: curl                         ##################### [300/463] 
+  Installing: python-pycurl                ##################### [301/463] 
+  Installing: dirmngr                      ##################### [302/463] 
+  Installing: gnupg2                       ##################### [303/463] 
+  Installing: gpgme                        ##################### [304/463] 
+  Installing: pygpgme                      ##################### [305/463] 
+  Installing: ppp                          ##################### [306/463] 
+  Installing: jack-audio-connection-kit    ##################### [307/463] 
+  Installing: libsndfile                   ##################### [308/463] 
+  Installing: pulseaudio-libs              ##################### [309/463] 
+  Installing: passwd                       ##################### [310/463] 
+  Installing: usermode                     ##################### [311/463] 
+  Installing: setuptool                    ##################### [312/463] 
+  Installing: nfs-utils-lib                ##################### [313/463] 
+  Installing: rarian                       ##################### [314/463] 
+  Installing: rarian-compat                ##################### [315/463] 
+  Installing: python-cryptsetup            ##################### [316/463] 
+  Installing: pygobject2                   ##################### [317/463] 
+  Installing: wpa_supplicant               ##################### [318/463] 
+  Installing: python-nss                   ##################### [319/463] 
+  Installing: iscsi-initiator-utils        ##################### [320/463] 
+  Installing: pycairo                      ##################### [321/463] 
+  Installing: cracklib-python              ##################### [322/463] 
+  Installing: pyxf86config                 ##################### [323/463] 
+  Installing: fipscheck                    ##################### [324/463] 
+  Installing: bind-libs                    ##################### [325/463] 
+  Installing: ntp                          ##################### [326/463] 
+  Installing: libXft                       ##################### [327/463] 
+  Installing: pango                        ##################### [328/463] 
+  Installing: ConsoleKit-libs              ##################### [329/463] 
+  Installing: groff                        ##################### [330/463] 
+  Installing: genisoimage                  ##################### [331/463] 
+  Installing: nscd                         ##################### [332/463] 
+  Installing: coreutils-libs               ##################### [333/463] 
+  Installing: perl-libs                    ##################### [334/463] 
+  Installing: hicolor-icon-theme           ##################### [335/463] 
+  Installing: hwdata                       ##################### [336/463] 
+  Installing: python-urlgrabber            ##################### [337/463] 
+  Installing: fedora-logos                 ##################### [338/463] 
+  Installing: libpciaccess                 ##################### [339/463] 
+  Installing: vbetool                      ##################### [340/463] 
+  Installing: pciutils                     ##################### [341/463] 
+  Installing: usbutils                     ##################### [342/463] 
+  Installing: nss_ldap                     ##################### [343/463] 
+  Installing: bind-utils                   ##################### [344/463] 
+  Installing: nfs-utils                    ##################### [345/463] 
+  Installing: gnupg                        ##################### [346/463] 
+  Installing: irda-utils                   ##################### [347/463] 
+  Installing: sudo                         ##################### [348/463] 
+  Installing: prelink                      ##################### [349/463] 
+  Installing: tcpdump                      ##################### [350/463] 
+  Installing: stunnel                      ##################### [351/463] 
+  Installing: at                           ##################### [352/463] 
+  Installing: pam_ccreds                   ##################### [353/463] 
+  Installing: pam_krb5                     ##################### [354/463] 
+  Installing: pam_passwdqc                 ##################### [355/463] 
+  Installing: pam_pkcs11                   ##################### [356/463] 
+  Installing: krb5-workstation             ##################### [357/463] 
+  Installing: audit                        ##################### [358/463] 
+  Installing: psacct                       ##################### [359/463] 
+  Installing: python-slip                  ##################### [360/463] 
+  Installing: plymouth-scripts             ##################### [361/463] 
+  Installing: system-config-firewall-base  ##################### [362/463] 
+  Installing: python-bugzilla              ##################### [363/463] 
+  Installing: xdg-utils                    ##################### [364/463] 
+  Installing: pykickstart                  ##################### [365/463] 
+  Installing: python-decorator             ##################### [366/463] 
+  Installing: python-iniparse              ##################### [367/463] 
+  Installing: sound-theme-freedesktop      ##################### [368/463] 
+  Installing: sgml-common                  ##################### [369/463] 
+  Installing: fedora-release-notes         ##################### [370/463] 
+  Installing: grub                         ##################### [371/463] 
+  Installing: sos                          ##################### [372/463] 
+  Installing: memtest86+                   ##################### [373/463] 
+  Installing: libcanberra                  ##################### [374/463] 
+  Installing: pyparted                     ##################### [375/463] 
+  Installing: python-pyblock               ##################### [376/463] 
+  Installing: initscripts                  ##################### [377/463] 
+  Installing: udev                         ##################### [378/463] 
+  Installing: perl                         ##################### [379/463] 
+  Installing: rpm                          ##################### [380/463] 
+  Installing: polkit                       ##################### [381/463] 
+  Installing: policycoreutils              ##################### [382/463] 
+  Installing: dhclient                     ##################### [383/463] 
+  Installing: ConsoleKit                   ##################### [384/463] 
+  Installing: rpm-libs                     ##################### [385/463] 
+  Installing: rpm-python                   ##################### [386/463] 
+  Installing: deltarpm                     ##################### [387/463] 
+  Installing: hal                          ##################### [388/463] 
+  Installing: GConf2                       ##################### [389/463] 
+  Installing: mdadm                        ##################### [390/463] 
+  Installing: openssh                      ##################### [391/463] 
+  Installing: kbd                          ##################### [392/463] 
+  Installing: pm-utils                     ##################### [393/463] 
+  Installing: openssh-clients              ##################### [394/463] 
+  Installing: python-deltarpm              ##################### [395/463] 
+  Installing: perl-Digest-SHA1             ##################### [396/463] 
+  Installing: crda                         ##################### [397/463] 
+  Installing: wireless-tools               ##################### [398/463] 
+  Installing: python-iwlib                 ##################### [399/463] 
+  Installing: dnsmasq                      ##################### [400/463] 
+  Installing: NetworkManager               ##################### [401/463] 
+  Installing: avahi                        ##################### [402/463] 
+  Installing: cups-libs                    ##################### [403/463] 
+  Installing: gtk2                         ##################### [404/463] 
+  Installing: pygtk2                       ##################### [405/463] 
+  Installing: libglade2                    ##################### [406/463] 
+  Installing: pygtk2-libglade              ##################### [407/463] 
+  Installing: usermode-gtk                 ##################### [408/463] 
+  Installing: libgnomecanvas               ##################### [409/463] 
+  Installing: libxfcegui4                  ##################### [410/463] 
+  Installing: libcanberra-gtk2             ##################### [411/463] 
+  Installing: libfprint                    ##################### [412/463] 
+  Installing: fprintd                      ##################### [413/463] 
+  Installing: libsexy                      ##################### [414/463] 
+  Installing: xfce4-notifyd                ##################### [415/463] 
+  Installing: libnotify                    ##################### [416/463] 
+  Installing: zenity                       ##################### [417/463] 
+  Installing: gtk2-engines                 ##################### [418/463] 
+  Installing: cyrus-sasl                   ##################### [419/463] 
+  Installing: sendmail                     ##################### [420/463] 
+  Installing: cronie                       ##################### [421/463] 
+  Installing: cronie-anacron               ##################### [422/463] 
+  Installing: yp-tools                     ##################### [423/463] 
+  Installing: ypbind                       ##################### [424/463] 
+  Installing: yum                          ##################### [425/463] 
+  Installing: python-meh                   ##################### [426/463] 
+  Installing: anaconda-yum-plugins         ##################### [427/463] 
+  Installing: yum-utils                    ##################### [428/463] 
+  Installing: createrepo                   ##################### [429/463] 
+  Installing: system-config-users          ##################### [430/463] 
+  Installing: authconfig-gtk               ##################### [431/463] 
+  Installing: gnome-python2                ##################### [432/463] 
+  Installing: gnome-icon-theme             ##################### [433/463] 
+  Installing: gnome-themes                 ##################### [434/463] 
+  Installing: system-config-network-tui    ##################### [435/463] 
+  Installing: system-config-firewall-tui   ##################### [436/463] 
+  Installing: selinux-policy               ##################### [437/463] 
+  Installing: python-slip-dbus             ##################### [438/463] 
+  Installing: system-config-firewall       ##################### [439/463] 
+  Installing: perl-Crypt-PasswdMD5         ##################### [440/463] 
+  Installing: perl-Pod-Simple              ##################### [441/463] 
+  Installing: perl-Pod-Escapes             ##################### [442/463] 
+  Installing: syslinux                     ##################### [443/463] 
+  Installing: metacity                     ##################### [444/463] 
+  Installing: gnome-python2-canvas         ##################### [445/463] 
+  Installing: fprintd-pam                  ##################### [446/463] 
+  Installing: openssh-server               ##################### [447/463] 
+  Installing: man                          ##################### [448/463] 
+  Installing: smartmontools                ##################### [449/463] 
+  Installing: quota                        ##################### [450/463] 
+  Installing: rng-utils                    ##################### [451/463] 
+  Installing: readahead                    ##################### [452/463] 
+  Installing: microcode_ctl                ##################### [453/463] 
+  Installing: system-config-date           ##################### [454/463] 
+  Installing: selinux-policy-targeted      ##################### [455/463] 
+  Installing: system-config-keyboard       ##################### [456/463] 
+  Installing: firstboot                    ##################### [457/463] 
+  Installing: libdrm                       ##################### [458/463] 
+  Installing: plymouth                     ##################### [459/463] 
+  Installing: anaconda                     ##################### [460/463] 
+  Installing: dracut                       ##################### [461/463] 
+  Installing: kernel                       ##################### [462/463]W: Possible missing firmware aic94xx-seq.fw for module aic94xx.ko
+W: Possible missing firmware ql8100_fw.bin for module qla2xxx.ko
+W: Possible missing firmware ql2500_fw.bin for module qla2xxx.ko
+W: Possible missing firmware ql2400_fw.bin for module qla2xxx.ko
+W: Possible missing firmware ql2322_fw.bin for module qla2xxx.ko
+W: Possible missing firmware ql2300_fw.bin for module qla2xxx.ko
+W: Possible missing firmware ql2200_fw.bin for module qla2xxx.ko
+W: Possible missing firmware ql2100_fw.bin for module qla2xxx.ko
+ 
+  Installing: pcmciautils                  ##################### [463/463]Removing password for user root.
+passwd: Success
+cp: cannot stat `/dump/dorrie/tmp/imgcreate-9rKmPO/install_root/usr/share/doc/HTML/readme-live-image/en_US/readme-live-image-en_US.txt': No such file or directory
+e2fsck 1.41.9 (22-Aug-2009)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+test: 46745/196608 files (0.1% non-contiguous), 226314/786432 blocks
+e2image 1.41.9 (22-Aug-2009)
+resize2fs 1.41.9 (22-Aug-2009)
+Resizing the filesystem on /dump/dorrie/tmp/imgcreate-9rKmPO/tmp-_7YPA2/ext3fs.img to 223458 (4k) blocks.
+The filesystem on /dump/dorrie/tmp/imgcreate-9rKmPO/tmp-_7YPA2/ext3fs.img is now 223458 blocks long.
+
+e2fsck 1.41.9 (22-Aug-2009)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+test: 46745/57344 files (0.1% non-contiguous), 217191/223458 blocks
+e2fsck 1.41.9 (22-Aug-2009)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+test: 46745/57344 files (0.1% non-contiguous), 217191/223458 blocks
+e2image 1.41.9 (22-Aug-2009)
+resize2fs 1.41.9 (22-Aug-2009)
+Resizing the filesystem on /dump/dorrie/tmp/imgcreate-9rKmPO/tmp-_7YPA2/ext3fs.img to 786432 (4k) blocks.
+The filesystem on /dump/dorrie/tmp/imgcreate-9rKmPO/tmp-_7YPA2/ext3fs.img is now 786432 blocks long.
+
+e2fsck 1.41.9 (22-Aug-2009)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+test: 46745/196608 files (0.1% non-contiguous), 226315/786432 blocks
+e2fsck 1.41.9 (22-Aug-2009)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+test: 46745/196608 files (0.1% non-contiguous), 226315/786432 blocks
+e2image 1.41.9 (22-Aug-2009)
+resize2fs 1.41.9 (22-Aug-2009)
+Resizing the filesystem on /dev/mapper/imgcreate-12677-52683 to 223459 (4k) blocks.
+The filesystem on /dev/mapper/imgcreate-12677-52683 is now 223459 blocks long.
+
+e2fsck 1.41.9 (22-Aug-2009)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+test: 46745/57344 files (0.1% non-contiguous), 217191/223459 blocks
+Parallel mksquashfs: Using 2 processors
+Creating 4.0 filesystem on /dump/dorrie/tmp/imgcreate-9rKmPO/iso-yYNQvU/LiveOS/osmin.img, block size 131072.
+
+Exportable Squashfs 4.0 filesystem, data block size 131072
+	compressed data, compressed metadata, compressed fragments
+	duplicates are removed
+Filesystem size 5.30 Kbytes (0.01 Mbytes)
+	0.61% of uncompressed filesystem size (868.22 Kbytes)
+Inode table size 65 bytes (0.06 Kbytes)
+	69.15% of uncompressed inode table size (94 bytes)
+Directory table size 23 bytes (0.02 Kbytes)
+	85.19% of uncompressed directory table size (27 bytes)
+Number of duplicate files found 0
+Number of inodes 2
+Number of files 1
+Number of fragments 0
+Number of symbolic links  0
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 1
+Number of ids (unique uids + gids) 1
+Number of uids 1
+	root (0)
+Number of gids 1
+	root (0)
+Parallel mksquashfs: Using 2 processors
+Creating 4.0 filesystem on /dump/dorrie/tmp/imgcreate-9rKmPO/iso-yYNQvU/LiveOS/squashfs.img, block size 131072.
+
+Exportable Squashfs 4.0 filesystem, data block size 131072
+	compressed data, compressed metadata, compressed fragments
+	duplicates are removed
+Filesystem size 249537.23 Kbytes (243.69 Mbytes)
+	7.93% of uncompressed filesystem size (3145824.30 Kbytes)
+Inode table size 18303 bytes (17.87 Kbytes)
+	18.59% of uncompressed inode table size (98450 bytes)
+Directory table size 50 bytes (0.05 Kbytes)
+	86.21% of uncompressed directory table size (58 bytes)
+Number of duplicate files found 0
+Number of inodes 3
+Number of files 1
+Number of fragments 0
+Number of symbolic links  0
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 2
+Number of ids (unique uids + gids) 1
+Number of uids 1
+	root (0)
+Number of gids 1
+	root (0)
+I: -input-charset not specified, using utf-8 (detected in locale settings)
+Size of boot image is 4 sectors -> No emulation
+  3.78% done, estimate finish Fri Apr  9 16:20:13 2010
+  7.57% done, estimate finish Fri Apr  9 16:20:13 2010
+ 11.34% done, estimate finish Fri Apr  9 16:20:21 2010
+ 15.12% done, estimate finish Fri Apr  9 16:20:19 2010
+ 18.90% done, estimate finish Fri Apr  9 16:20:23 2010
+ 22.68% done, estimate finish Fri Apr  9 16:20:26 2010
+ 26.46% done, estimate finish Fri Apr  9 16:20:24 2010
+ 30.24% done, estimate finish Fri Apr  9 16:20:22 2010
+ 34.02% done, estimate finish Fri Apr  9 16:20:21 2010
+ 37.80% done, estimate finish Fri Apr  9 16:20:23 2010
+ 41.57% done, estimate finish Fri Apr  9 16:20:22 2010
+ 45.36% done, estimate finish Fri Apr  9 16:20:21 2010
+ 49.13% done, estimate finish Fri Apr  9 16:20:23 2010
+ 52.92% done, estimate finish Fri Apr  9 16:20:22 2010
+ 56.69% done, estimate finish Fri Apr  9 16:20:21 2010
+ 60.48% done, estimate finish Fri Apr  9 16:20:21 2010
+ 64.25% done, estimate finish Fri Apr  9 16:20:22 2010
+ 68.04% done, estimate finish Fri Apr  9 16:20:21 2010
+ 71.81% done, estimate finish Fri Apr  9 16:20:21 2010
+ 75.59% done, estimate finish Fri Apr  9 16:20:22 2010
+ 79.37% done, estimate finish Fri Apr  9 16:20:21 2010
+ 83.15% done, estimate finish Fri Apr  9 16:20:22 2010
+ 86.93% done, estimate finish Fri Apr  9 16:20:22 2010
+ 90.71% done, estimate finish Fri Apr  9 16:20:21 2010
+ 94.49% done, estimate finish Fri Apr  9 16:20:21 2010
+ 98.27% done, estimate finish Fri Apr  9 16:20:24 2010
+Total translation table size: 2048
+Total rockridge attributes bytes: 3072
+Total directory bytes: 8192
+Path table size(bytes): 64
+Max brk space used 1a000
+132297 extents written (258 MB)
+Inserting md5sum into iso image...
+md5 = f0ca8183fb22052c5e427de390538aa8
+Inserting fragment md5sums into iso image...
+fragmd5 = befe24bedbeb4cb9eb3df8e3f7c7999345fa7a578d935a748bcbb97d2fad
+frags = 20
+Setting supported flag to 0
+ 
+
