@@ -16,6 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import os, pytz, urllib
+import json
 
 from subprocess import Popen
 
@@ -217,6 +218,8 @@ def livecd_command(spin):
     """
     Build livecd-creator command
     """
+    if settings.TESTING:
+        return 'while read ln; do echo $ln; sleep .05; done < ../test-data/test.log'
     ks_path = "%s%s_%s/%s.ks" % (settings.CACHE, spin.id, spin.name, spin.name)
     fs_label = spin.name
     folder = "%s%s_%s" % (settings.CACHE, spin.id, spin.name)
@@ -233,33 +236,76 @@ def livecd_create(id):
     """
     spin = get_spin(id)
     cmd = livecd_command(spin)
-    log_file = "%s%s_%s/%s.log" % \
-        (settings.CACHE, spin.id, spin.name, spin.name)
-    fd = open(log_file, 'w')
+    fd = get_log(spin, 'w')
     process = Popen(cmd, shell=True, stdout=fd, stderr=fd)
     spin.pid = process.pid
     spin.save()
     return process.pid
+
+
+def get_log(spin, mode):
+    """
+    Returns FD of logfile, of given mode
+    """
+    log_file = "%s%s_%s/%s.log" % \
+        (settings.CACHE, spin.id, spin.name, spin.name)
+    return open(log_file, mode)
 
  
 def get_tail(id):
     """
     return tail or log file
     """
+    dump = {
+        'link' : None,
+        'string' : None,
+        'percent' : None
+    }
     spin = get_spin(id)
     spin_path = "%s%s_%s/%s.iso" % (settings.CACHE, spin.id, spin.name, 
         spin.name)
     if os.path.exists(spin_path):
         linkname = "/static/cache/%s_%s/%s.iso" % \
             (spin.id, spin.name, spin.name)
-        lines = "<h3><a href='%s'>Download Spin</a></h3>" % linkname
+        dump['link'] = "<a href='%s'>Download Spin</a>" % linkname
     else:
-        log_file = "%s%s_%s/%s.log" % \
-            (settings.CACHE, spin.id, spin.name, spin.name)
-        fd = open(log_file, 'r')
-        lines = fd.readlines()[-10:]
-        fd.close()
-        lines = "<br>".join(lines)
-    return lines
+        dump['string'], dump['percent'] = analyze_log(spin)
+    if dump['percent'] is 100 and settings.TESTING:
+        dump['link'] = "<a href='#'>Download Spin</a>"
+    return json.dumps(dump)
 
+
+def analyze_log(spin):
+    """
+    Returns string and percent completed from log
+    """
+    fd = get_log(spin, 'r')
+    for line in reversed(fd.readlines()):
+        if line.find('Setting supported flag to') is not -1:
+            return 'Building image complete', 100
+        elif line.find('done, estimate finish') is not -1:
+            try:
+                estimate = int(float(line[:line.find('%')]))/10
+            except:
+                return None, None
+            return 'Building ISO image', 90 + estimate
+        elif line.find('Parallel mksquashfs') is not -1:
+            return 'Create Squash filesystem', 80 
+        elif (line.find('e2fsck') is not -1 or line.find('resize2fs') is not
+            -1 or line.find('e2image') is not -1):
+                return 'Check and resize filesystem', 70
+        elif line.find('password') is not -1:
+            return 'Changing root password', 65
+        elif line.find('Installing:') is not -1:
+            try:
+                estimate = int(float(line[line.find('[') + 1: line.find('/')]) / 
+                    float(line[line.find('/') + 1: line.find(']')]) * 50)
+            except:
+                return None, None
+            return 'Installing packages%s' % ('.'*(estimate/10)), 15 + estimate
+        elif line.find('Retrieving') is not -1:
+            return 'Retrieving repodata', 10
+        elif line.find('mke2fs') is not -1:
+            return 'Making new filesystem', 5
+    return None, None
 

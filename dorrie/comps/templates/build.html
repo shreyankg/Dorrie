@@ -24,32 +24,44 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <script type="text/javascript">
 $(document).ready(function() {
     $("#packages").hide();
+    $("#download-link").hide();
+    $("#progress-bar").progressbar( { value: 0 } );
 });
 
 function build(id) {
     $.post("/process/", { spin_id: id });
     $('#packages').slideDown("normal");
-    setInterval(show_log, 3000); 
+    setInterval(show_log, 2000); 
 }
 
 var show_log = function() {
     $.post("/tail/", { spin_id: {{ spin.id }} }, 
-     function(data) {
-       $("#package-list").html(data); 
-     }
+      function(data) {
+        $("#progress-bar").progressbar( "option", "value", data['percent'] ); 
+        $("#progress-string").html(data['string']);
+        if (data['link']) {
+            $("#download-link").html(data['link']);
+            $("#download-link").slideDown("normal")
+        }
+      }, "json"
     );
 }
 
 </script>
 
 <h1>Image : {{ spin.name }}</h1>
-<h3><a href="{{ ks }}">Download Kickstart</a></h3>
 
-<h3><a href="javascript:build({{ spin.id }})">Build Spin</a></h3>
+    <div id="group-list">
+    <h3 style="padding:10px; background-color:lightBlue"><a href="{{ ks }}">Download Kickstart</a></h3>
+
+    <h3 style="padding:10px; background-color:lightBlue"><a href="javascript:build({{ spin.id }})">Build Spin</a></h3>
+    <h3 id="download-link" style="padding:10px; background-color:lightBlue"></h3>
+    </div>
 
     <div id="packages">
     <h3>Building spin {{ spin.name }}</h3>
-    <div id="package-list"></div>
+    <div id="progress-bar"></div>
+    <div id="progress-string"></div>
     </div>
 
 {% endblock %}

@@ -112,3 +112,5 @@ KS_DIR = '/usr/share/spin-kickstarts/'
 CACHE = ''
 # Local fedora repository to the folder that contains Packages
 REPO = ''
+
+TESTING = False

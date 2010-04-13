@@ -68,6 +68,17 @@ pre
     overflow: auto;
 }
 
+#progress-bar
+{
+  width: 80%;
+  height: 20px;
+}
+
+#progress-string
+{
+  padding-top: 20px;
+}
+
 #head
 {
   position: relative;

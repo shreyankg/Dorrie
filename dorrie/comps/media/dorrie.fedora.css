@@ -202,7 +202,7 @@ body
 
 #wrapper
 {
-	min-height: 0px;
+	min-height: 500px;
 	margin: auto;
 	background: #fff url(/static/images/background.png) repeat-x scroll 0 0;
 
