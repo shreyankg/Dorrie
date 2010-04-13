@@ -1,3 +1,18 @@
+2010-04-13 Shreyank Gupta <sgupta@redhat.com>
+
+	* dorrie/comps/media/dorrie.fedora.css,
+	dorrie/comps/media/fedora.css: Style changes.
+
+	* /dorrie/comps/parse.py (livecd_command): Testing option
+	(livecd_create): use get_log.
+	(get_tail): return JSON object instead of string.
+	(analyze_log, get_log): New functions.
+
+	* dorrie/comps/templates/build.html: Progress bar + rearrengements.
+
+	* dorrie/settings.py (TESTING): New setting for testing.
+
+	
 2010-02-23 Shreyank Gupta <sgupta@redhat.com>
 	
 	* dorrie/comps/media/fedora.css (#packages, #package-list): Width, border.
