@@ -1,0 +1,5 @@
+*.pyc
+*.sqlite3
+*.swp
+comps*.xml
+dorrie/comps/media/cache

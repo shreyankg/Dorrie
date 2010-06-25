@@ -13,6 +13,7 @@ Required packages:
 - sqlite
 - python-sqlite2
 - yum
+- system-config-language
 
 If you're choosing MySQL, replace the sqlite dependencies with the MySQL ones:
 
@@ -41,13 +42,9 @@ How to Install:
 Leave the host and port empty id the database is at the same mechine as the
 application.
 
-2. Set ``APP_ROOT`` to the path where the application is installed::
+2. Set ``CACHE`` to a directory writable by the user running the application.
 
-    APP_ROOT = '/path/to/dorrie/'
-
-3. Set ``CACHE`` to a directory writable by the user running the application.
-
-4. Create the required table structure in the database::
+3. Create the required table structure in the database::
 
     $ python manage.py syncdb
 
