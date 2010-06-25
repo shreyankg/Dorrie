@@ -1,3 +1,15 @@
+2010-06-25 Shreyank Gupta <sgupta@redhat.com>
+
+	* .gitignore: New file.
+
+	* INSTALL: Added new dependency. Removed APP_ROOT config.
+
+	* dorrie/comps/media/cache: Removed.
+
+	* dorrie/comps/parse.py (build_ks): Empty REPO, tmp check.
+
+	* dorrie/settimgs.py (CACHE): Default value /tmp
+
 2010-04-13 Shreyank Gupta <sgupta@redhat.com>
 
 	* dorrie/comps/media/dorrie.fedora.css,

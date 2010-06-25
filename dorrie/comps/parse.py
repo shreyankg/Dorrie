@@ -180,15 +180,16 @@ def build_ks(id):
     ksparser.handler.packages.packageList.extend(pplus)
     ksparser.handler.packages.excludedList.extend(pminus)
 
-    #Change mirrorlist repo to the local one
-    repolist = ksparser.handler.repo.repoList
-    released = os.path.join(settings.REPO, 'fedora/Packages/')
-    updates = os.path.join(settings.REPO, 'updates/')
-    for repo in repolist:
-        if repo.name == 'released':
-            repo.baseurl = 'file://%s' % released
-        elif repo.name == 'updates':
-            repo.baseurl = 'file://%s' % updates
+    if settings.REPO:
+        #Change mirrorlist repo to the local one
+        repolist = ksparser.handler.repo.repoList
+        released = os.path.join(settings.REPO, 'fedora/Packages/')
+        updates = os.path.join(settings.REPO, 'updates/')
+        for repo in repolist:
+            if repo.name == 'released':
+                repo.baseurl = 'file://%s' % released
+            elif repo.name == 'updates':
+                repo.baseurl = 'file://%s' % updates
 
     #write new ks file
     filename = "%s%s.ks" % (folder, spin.name)
@@ -225,6 +226,8 @@ def livecd_command(spin):
     folder = "%s%s_%s" % (settings.CACHE, spin.id, spin.name)
     cache_path = os.path.join(settings.CACHE, 'cache/')
     tmp_path = os.path.join(settings.CACHE, 'tmp/')
+    if not os.path.exists(tmp_path):
+        os.makedirs(tmp_path)    
     cmd = "cd %s;sudo livecd-creator -c %s --cache='%s' -t '%s' -f %s" \
         % (folder, ks_path, cache_path, tmp_path, fs_label)
     return cmd
