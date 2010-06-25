@@ -109,7 +109,7 @@ COMPS_URL = \
 KS_DIR = '/usr/share/spin-kickstarts/'
 
 # cache to store the built KS files and spins (Read 'lots of GBs')
-CACHE = ''
+CACHE = '/tmp/'
 # Local fedora repository to the folder that contains Packages
 REPO = ''
 
