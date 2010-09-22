@@ -13,6 +13,7 @@ Required packages:
 - sqlite
 - python-sqlite2
 - yum
+- livecd-tools
 - system-config-language
 
 If you're choosing MySQL, replace the sqlite dependencies with the MySQL ones:
@@ -50,6 +51,9 @@ application.
 
 How to run Dorrie
 =================
+Before running server you have to make sure SELinux is enabled in your system.
+
+Always run server as super user.
 
 To run it as local instance, execute something like the following::
 
@@ -58,4 +62,3 @@ To run it as local instance, execute something like the following::
 To run this project under Apache, refer to the `Django Deployment Documentation`_.
 
 .. _Django Deployment Documentation: http://www.djangobook.com/en/1.0/chapter20/
-

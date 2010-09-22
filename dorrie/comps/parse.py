@@ -228,7 +228,7 @@ def livecd_command(spin):
     tmp_path = os.path.join(settings.CACHE, 'tmp/')
     if not os.path.exists(tmp_path):
         os.makedirs(tmp_path)    
-    cmd = "cd %s;sudo livecd-creator -c %s --cache='%s' -t '%s' -f %s" \
+    cmd = "cd %s;livecd-creator -c %s --cache='%s' -t '%s' -f %s" \
         % (folder, ks_path, cache_path, tmp_path, fs_label)
     return cmd
 

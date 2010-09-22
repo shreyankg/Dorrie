@@ -103,8 +103,8 @@ INSTALLED_APPS = (
     'comps',
 )
 
-COMPS_URL = \
-    'http://cvs.fedoraproject.org/viewvc/comps/comps-f12.xml.in?view=co'
+COMPS_URL = 'http://git.fedorahosted.org/git/?p=comps.git;a=blob_plain;\
+f=comps-f13.xml.in;hb=HEAD'
 
 KS_DIR = '/usr/share/spin-kickstarts/'
 

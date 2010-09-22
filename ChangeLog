@@ -1,3 +1,11 @@
+2010-09-22 Praveen Kumar <kumarpraveen.nitdgp@gmail.com>
+	
+	* INSTALL: Added new dependency.Add requirements
+	
+	* dorrie/settings.py (COMPS_URL) : Change Default value
+	
+	* dorrie/coms/parse.py (livecd_command) : Remove sudo from cmd variable
+	
 2010-06-25 Shreyank Gupta <sgupta@redhat.com>
 
 	* .gitignore: New file.
