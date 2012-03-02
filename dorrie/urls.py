@@ -1,4 +1,4 @@
-# Dorrie - Web interface for building Fedora Spins/Remixes. 
+# Dorrie - Web interface for building Fedora Spins/Remixes.
 # Copyright (C) 2009 Red Hat Inc.
 # Author: Shreyank Gupta <sgupta@redhat.com>
 
@@ -27,7 +27,7 @@ urlpatterns = patterns('',
     # Example:
     # (r'^dorrie/', include('dorrie.foo.urls')),
 
-    # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
+    # Uncomment the admin/doc line below and add 'django.contrib.admindocs'
     # to INSTALLED_APPS to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
