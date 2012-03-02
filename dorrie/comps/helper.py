@@ -94,7 +94,7 @@ def add_rem_groups(spin, type, string):
         return 'Removed group %s' % string
     else:
         return None
-    
+
 
 def add_rem_packages(spin, type, string):
     """
@@ -122,7 +122,7 @@ def add_rem_packages(spin, type, string):
         return 'Removed package %s' % string
     else:
         return None
-    
+
 
 def select_helper(spin_id, type, action, string):
     """
@@ -135,3 +135,4 @@ def select_helper(spin_id, type, action, string):
         return add_rem_groups(spin, action, string)
     else:
         return None
+

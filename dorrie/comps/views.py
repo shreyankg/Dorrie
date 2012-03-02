@@ -1,4 +1,4 @@
-# Dorrie - Web interface for building Fedora Spins/Remixes. 
+# Dorrie - Web interface for building Fedora Spins/Remixes.
 # Copyright (C) 2009 Red Hat Inc.
 # Author: Shreyank Gupta <sgupta@redhat.com>
 
@@ -61,7 +61,7 @@ def packages(request):
     return render_to_response('packages.html', {'cats': categories,
         'groups': groups, 'defaults': selected, 'spin': spin,
         'plus': plus, 'minus': minus})
-    
+
 
 def select(request):
     """
@@ -83,7 +83,7 @@ def build(request):
     new_ks = build_ks(spin_id)
     spin = get_spin(spin_id)
     return render_to_response('build.html', {'ks': new_ks, 'spin': spin})
-    
+
 
 def process(request):
     """
