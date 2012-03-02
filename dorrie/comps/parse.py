@@ -80,6 +80,8 @@ def kickstart(ks, path=settings.KS_DIR):
     """
     ks = "%s%s" % (path, ks)
     ksparser = KickstartParser(makeVersion())
+    if isinstance(ks, unicode):
+        ks = ks.encode('utf-8')
     ksparser.readKickstart(ks)
     return ksparser
 
