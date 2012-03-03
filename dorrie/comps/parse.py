@@ -31,7 +31,6 @@ from helper import get_spin
 from hardwareLists import langDict
 #import rhpl.keyboard as keyboard
 
-
 def get_comps():
     """
     parse and return comps object
@@ -181,16 +180,14 @@ def build_ks(id):
     ksparser.handler.packages.packageList.extend(pplus)
     ksparser.handler.packages.excludedList.extend(pminus)
 
-    if settings.REPO:
+    if settings.ENABLE_LOCAL_REPO:
         #Change mirrorlist repo to the local one
         repolist = ksparser.handler.repo.repoList
-        released = os.path.join(settings.REPO, 'fedora/Packages/')
-        updates = os.path.join(settings.REPO, 'updates/')
+        repos = settings.REPOLIST
+        repo_names = repos.keys()
         for repo in repolist:
-            if repo.name == 'released':
-                repo.baseurl = 'file://%s' % released
-            elif repo.name == 'updates':
-                repo.baseurl = 'file://%s' % updates
+            if repo.name in repo_names and repos.get(repo.name, None):
+                repo.baseurl = 'file://%s' % repos.get(repo.name)
 
     #write new ks file
     filename = "%s%s.ks" % (folder, spin.name)
