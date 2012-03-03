@@ -111,6 +111,10 @@ KS_DIR = '/usr/share/spin-kickstarts/'
 # cache to store the built KS files and spins (Read 'lots of GBs')
 CACHE = '/tmp/'
 # Local fedora repository to the folder that contains Packages
-REPO = ''
+ENABLE_LOCAL_REPO = False
+REPOLIST = {
+        'fedora': '',
+        'updates': ''
+}
 
 TESTING = False
