@@ -30,9 +30,7 @@ class BasicForm(forms.Form):
     """
     Name and template
     """
-    #TODO fetch tz and lang from kickstart 
+    #TODO fetch tz and lang from kickstart
     select_language = forms.ChoiceField(choices=languages(), initial='en_US')
     select_timezone = forms.ChoiceField(choices=timezones())
-
-    
 

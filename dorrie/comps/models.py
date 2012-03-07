@@ -1,4 +1,4 @@
-# Dorrie - Web interface for building Fedora Spins/Remixes. 
+# Dorrie - Web interface for building Fedora Spins/Remixes.
 # Copyright (C) 2009 Red Hat Inc.
 # Author: Shreyank Gupta <sgupta@redhat.com>
 
@@ -41,3 +41,4 @@ class Group(models.Model):
 class Package(models.Model):
     """A Package."""
     name = models.TextField(help_text="The name of the package.")
+

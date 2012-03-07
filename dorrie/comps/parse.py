@@ -1,4 +1,4 @@
-# Dorrie - Web interface for building Fedora Spins/Remixes. 
+# Dorrie - Web interface for building Fedora Spins/Remixes.
 # Copyright (C) 2009 Red Hat Inc.
 # Author: Shreyank Gupta <sgupta@redhat.com>
 
@@ -31,7 +31,6 @@ from helper import get_spin
 from hardwareLists import langDict
 #import rhpl.keyboard as keyboard
 
-
 def get_comps():
     """
     parse and return comps object
@@ -40,7 +39,6 @@ def get_comps():
     c = Comps()
     c.add(fd)
     return c
-    
 
 def ls_ks():
     """
@@ -63,7 +61,7 @@ def languages():
     for text, code in langDict.iteritems():
         choicelist.append((code, text))
     return tuple(choicelist)
-    
+
 
 def timezones():
     """
@@ -81,13 +79,15 @@ def kickstart(ks, path=settings.KS_DIR):
     """
     ks = "%s%s" % (path, ks)
     ksparser = KickstartParser(makeVersion())
+    if isinstance(ks, unicode):
+        ks = ks.encode('utf-8')
     ksparser.readKickstart(ks)
     return ksparser
 
 
 def get_lang_tz(ks):
     """
-    return default language and timezole from base kickstart
+    return default language and timezone from base kickstart
     """
     ksparser = kickstart(ks)
     dict = {}
@@ -109,7 +109,7 @@ def default_selected(ks):
 
 def package_listing(c):
     """
-    Return a nicely parsed package-group listing 
+    Return a nicely parsed package-group listing
     """
     result = {}
     for group, object in c._groups.iteritems():
@@ -145,9 +145,9 @@ def build_ks(id):
     """
     spin = get_spin(id)
     folder = "%s%s_%s/" % (settings.CACHE, spin.id, spin.name)
-    
+
     link = "%s/cache" % settings.MEDIA_ROOT
-   
+
     #build paths
     if not os.path.exists(folder):
         os.makedirs(folder)
@@ -156,7 +156,7 @@ def build_ks(id):
         os.symlink(settings.CACHE, link)
 
     ksparser = kickstart(spin.baseks)
-   
+
     #change lang, tz
 
     ksparser.handler.lang.lang = spin.language
@@ -180,16 +180,14 @@ def build_ks(id):
     ksparser.handler.packages.packageList.extend(pplus)
     ksparser.handler.packages.excludedList.extend(pminus)
 
-    if settings.REPO:
+    if settings.ENABLE_LOCAL_REPO:
         #Change mirrorlist repo to the local one
         repolist = ksparser.handler.repo.repoList
-        released = os.path.join(settings.REPO, 'fedora/Packages/')
-        updates = os.path.join(settings.REPO, 'updates/')
+        repos = settings.REPOLIST
+        repo_names = repos.keys()
         for repo in repolist:
-            if repo.name == 'released':
-                repo.baseurl = 'file://%s' % released
-            elif repo.name == 'updates':
-                repo.baseurl = 'file://%s' % updates
+            if repo.name in repo_names and repos.get(repo.name, None):
+                repo.baseurl = 'file://%s' % repos.get(repo.name)
 
     #write new ks file
     filename = "%s%s.ks" % (folder, spin.name)
@@ -211,7 +209,7 @@ def build_ks(id):
     if not os.path.exists(linkname):
         os.unlink(link)
         os.symlink(settings.CACHE, link)
-    
+
     return linkname
 
 
@@ -227,7 +225,7 @@ def livecd_command(spin):
     cache_path = os.path.join(settings.CACHE, 'cache/')
     tmp_path = os.path.join(settings.CACHE, 'tmp/')
     if not os.path.exists(tmp_path):
-        os.makedirs(tmp_path)    
+        os.makedirs(tmp_path)
     cmd = "cd %s;livecd-creator -c %s --cache='%s' -t '%s' -f %s" \
         % (folder, ks_path, cache_path, tmp_path, fs_label)
     return cmd
@@ -254,7 +252,7 @@ def get_log(spin, mode):
         (settings.CACHE, spin.id, spin.name, spin.name)
     return open(log_file, mode)
 
- 
+
 def get_tail(id):
     """
     return tail or log file
@@ -265,7 +263,7 @@ def get_tail(id):
         'percent' : None
     }
     spin = get_spin(id)
-    spin_path = "%s%s_%s/%s.iso" % (settings.CACHE, spin.id, spin.name, 
+    spin_path = "%s%s_%s/%s.iso" % (settings.CACHE, spin.id, spin.name,
         spin.name)
     if os.path.exists(spin_path):
         linkname = "/static/cache/%s_%s/%s.iso" % \
@@ -293,7 +291,7 @@ def analyze_log(spin):
                 return None, None
             return 'Building ISO image', 90 + estimate
         elif line.find('Parallel mksquashfs') is not -1:
-            return 'Create Squash filesystem', 80 
+            return 'Create Squash filesystem', 80
         elif (line.find('e2fsck') is not -1 or line.find('resize2fs') is not
             -1 or line.find('e2image') is not -1):
                 return 'Check and resize filesystem', 70
@@ -301,7 +299,7 @@ def analyze_log(spin):
             return 'Changing root password', 65
         elif line.find('Installing:') is not -1:
             try:
-                estimate = int(float(line[line.find('[') + 1: line.find('/')]) / 
+                estimate = int(float(line[line.find('[') + 1: line.find('/')]) /
                     float(line[line.find('/') + 1: line.find(']')]) * 50)
             except:
                 return None, None
