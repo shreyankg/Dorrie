@@ -10,9 +10,6 @@
 # Some of the default settings require extra dependencies, such as
 # the excellent tools django-debug-toolbar.
 
-# Django-extensions:
-INSTALLED_APPS += ['django_extensions',]
-
 # Django-debug-toolbar:
 INSTALLED_APPS += ['debug_toolbar',]
 MIDDLEWARE_CLASSES += ['debug_toolbar.middleware.DebugToolbarMiddleware',]

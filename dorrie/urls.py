@@ -49,3 +49,5 @@ if settings.STATIC_SERVE:
          {'document_root': settings.MEDIA_ROOT}),
     )
 
+if settings.ENABLE_ADDONS:
+    urlpatterns += patterns('', (r'', include('django_addons.urls')))
