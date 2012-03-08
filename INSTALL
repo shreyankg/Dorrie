@@ -15,6 +15,7 @@ Required packages:
 - yum
 - livecd-tools
 - system-config-language
+- django-addons
 
 If you're choosing MySQL, replace the sqlite dependencies with the MySQL ones:
 
