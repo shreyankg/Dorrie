@@ -1,0 +1,21 @@
+
+# Override various bits and pieces for this particular host. Used extensively
+# for development.
+#
+# The default settings here are for DEVELOPMENT PURPOSES.
+#
+# Copy this file to ``90-local.conf`` to play around. This file will be ignored
+# by Mercurial.
+#
+# Some of the default settings require extra dependencies, such as
+# the excellent tools django-debug-toolbar.
+
+# Django-debug-toolbar:
+INSTALLED_APPS += ['debug_toolbar',]
+MIDDLEWARE_CLASSES += ['debug_toolbar.middleware.DebugToolbarMiddleware',]
+DEBUG_TOOLBAR_CONFIG = {
+    'INTERCEPT_REDIRECTS': False,
+    'HIDE_DJANGO_SQL': True,
+}
+
+
